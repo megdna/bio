@@ -1,0 +1,404 @@
+/* Theme Defaults */
+:root {
+  --mono-font: "Andale Mono", "Andale Mono WT", "Bitstream Vera Sans Mono",
+    Consolas, Courier, "Courier New", "DejaVu Sans Mono", "Liberation Mono",
+    "Lucida Console", "Lucida Sans Typewriter", Menlo, Monaco, monospace,
+    "Nimbus Mono L", "Ubuntu Mono";
+  --sans-font: -apple-system, Arial, Avenir, "Avenir Next", BlinkMacSystemFont,
+    Helvetica, "Helvetica Neue", "Nimbus Sans L", "Noto Sans", Roboto, sans-serif,
+    "Segoe UI", system-ui;
+}
+
+:root {
+  --bg: #FFFFFF;
+  --bg-box: #E8F2FF;
+  --shadow: #C6E0FF;
+  --border: #008FDB;
+  --link: #0071AF;
+  --meta: #003B5E;
+  --text: #001C30;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #001C30;
+    --bg-box: #003B5E;
+    --shadow: #003B5E;
+    --border: #0071AF;
+    --link: #008FDB;
+    --meta: #C6E0FF;
+    --text: #E8F2FF;
+	}
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--sans-font);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr min(45rem, 90%) 1fr;
+}
+body > * {
+  grid-column: 2;
+}
+
+body > header {
+  background-color: var(--bg-box);
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+body > header a,
+body > header a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
+body > header a:hover {
+  color: var(--link);
+}
+body > header h1 {
+  margin: 0.5rem auto;
+  max-width: 1200px;
+}
+body > header p {
+  font-style: italic;
+  margin: 0.5rem auto;
+  max-width: 40rem;
+}
+header > nav {
+  line-height: 2;
+  padding: 0.5rem 0 0;
+}
+header > nav a,
+header > nav a:visited {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--text);
+  display: inline-block;
+  margin: 0 0.25rem 1rem;
+  padding: 0.1rem 1rem;
+  text-decoration: none;
+}
+header > nav a:hover,
+header > nav a.current,
+header > nav a[aria-current="page"] {
+  border-color: var(--link);
+  color: var(--link);
+  cursor: pointer;
+}
+
+main {
+  padding: 0;
+}
+main nav {
+  margin: 1rem 0 0.5rem;
+}
+main > nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+main > nav a:before {
+  content: " → ";
+}
+
+body > footer {
+  border-top: 1px solid var(--border);  
+  color: var(--meta);
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  padding: 1rem 1rem 1.5rem;
+  text-align: center;
+}
+body > footer p {
+  margin: 0.5rem auto;
+}
+footer > nav a {
+  padding: 0 0.25rem;
+}
+
+/* Standard HTML */
+h1, h2, h3, h4, h5, h6, p {
+  overflow-wrap: break-word;
+}
+h1, h2, h3, h4 {
+  line-height: 1.1;
+  margin: 1.5rem 0 1rem;
+}
+h5, h6, p {
+  margin: 1rem 0 0.5rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.1rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.15rem;
+}
+h6 {
+  font-size: 0.96rem;
+}
+
+ol, ul {
+  line-height: 1.75;
+  margin: 0.5rem 0;
+}
+
+a {
+	color: var(--link);
+}
+a:active,
+a:hover,
+a:visited {
+	color: var(--border);
+  text-decoration: none;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+blockquote {
+  border-inline-start: 0.25rem solid var(--link);
+  margin-inline-start: 1rem;
+  margin-inline-end: 0;
+  margin-block: 1rem;
+  padding: 0 1rem;
+}
+
+button {
+  background-color: var(--bg-box);
+  border: 1px solid var(--link);
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--shadow);
+  border: 1px solid var(--border);
+}
+button, cite, dd {
+  color: var(--meta);
+  font-size: 0.9rem;
+}
+
+code, mark {
+  background-color: var(--bg-box);
+  border-radius: 5px;
+  color: var(--text);
+  padding: 2px 5px;
+}
+code, kbd, pre, samp {
+  color: var(--meta);
+  font-family: var(--mono-font);
+  line-height: normal;
+}
+kbd {
+  border: 1px solid var(--meta);
+  border-bottom: 3px solid var(--meta);
+  border-radius: 5px;
+  padding: 0.1rem 0.4rem;
+}
+pre {
+  background-color: var(--bg-box);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0;
+  max-width: 100%;
+  overflow: auto;
+}
+pre code {
+  margin: 0;
+  padding: 0;
+}
+  
+hr {
+	border: 1px dashed var(--border);
+  margin: 1.25rem 0 1rem;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  position: relative;
+}
+sub { 
+  top: 0.3em; 
+}
+sup {
+  top: -0.4em;
+}
+
+/* Special Elements */
+article, aside {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+article {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+aside {
+  background-color: var(--bg-box);
+  float: right;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  width: 40%;
+}
+*[dir="rtl"] aside {
+  float: left;
+}
+
+article > :first-child,
+aside > :first-child,
+section aside > :first-child {
+  margin-top: 0;
+}
+article > :last-child,
+aside > :last-child,
+section aside > :last-child {
+  margin-bottom: 0;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+section aside {
+  background-color: var(--bg);
+  border: 1px solid var(--bg-box);
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px var(--shadow);
+  margin: 0.5rem 0 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+section aside:hover {
+  box-shadow: 1px 1px 5px var(--border);
+}
+section aside img {
+  float: right;
+  height: 100px;
+  margin: 0;
+  padding: 0 0 0 0.25rem;
+}
+
+details {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin: 1.5rem 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
+summary {
+  background-color: var(--bg-box);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: -0.5rem -1rem;
+  padding: 0.5rem 1rem;
+  word-break: break-all;
+}
+details[open] > summary {
+  margin-bottom: 0.5rem;
+}
+
+audio, img, picture, video {
+  border-radius: 5px;
+  height: auto;
+  margin: 0.5rem 0 0;
+  max-width: 100%;
+}
+
+embed, iframe, object {
+  border: 1px solid var(--bg-box);
+  border-radius: 5px;
+  margin: 0.5rem 0 0;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+  overflow-x: auto;
+  text-align: center;
+}
+figcaption {
+  color: var(--meta);
+  font-size: 0.9rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+}
+td, th {
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  text-align: start;
+}
+th,
+tr:nth-child(even) {
+  background-color: var(--bg-box);
+}
+table caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Optional Classes */
+.anchor {
+	font-style: normal;
+	margin-left: .1rem;
+	text-decoration: none;
+}
+a.anchor,
+a.anchor:visited {
+	color: transparent;
+}
+a.anchor:focus,
+a.anchor:hover {
+	text-decoration: underline;
+}
+a.anchor:focus,
+:hover > a.anchor {
+	color: var(--meta);
+}
+
+.icon {
+  fill: currentColor;
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
+}
+
+.next {
+  float: right;
+}
+
+.notice {
+  background: var(--bg-box);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin: 1rem 0;
+  padding: 1rem;
+}

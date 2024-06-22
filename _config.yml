@@ -1,0 +1,33 @@
+# Site Settings
+lang: en
+icon: 🧬
+title: BioShack
+description: Building the Future with Open Science
+
+url: "https://megdna.github.io"
+baseurl: "/pond"
+permalink: :title
+
+founded: 2011
+github: bioshack
+goatcounter: bio
+
+nav:
+  - name: About
+    link: /about
+  - name: Contact
+    link: /contact
+  - name: Posts
+    link: /posts
+  
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: "media/**"
+    values:
+      sitemap: false
