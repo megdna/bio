@@ -5,7 +5,7 @@ title: BioShack
 description: Building the Future with Open Science
 
 url: "https://megdna.github.io"
-baseurl: "/pond"
+baseurl: "/bio"
 permalink: :title
 
 founded: 2011
