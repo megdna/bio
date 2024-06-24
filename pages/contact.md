@@ -5,24 +5,30 @@ title: Contact
 ---
 <h3 id="donate">Donate <a class="anchor" href="#donate">#</a></h3>
 
-If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>. Any little bit helps since we are all volunteers at BioShack 🙂
+If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>. Any little bit helps since we are all volunteers at BioShack!
 
 <a href="https://ko-fi.com/bioshack" target="_blank"><button>☕ Support us on Ko-fi</button></a>
 
 <h3 id="email">Email <a class="anchor" href="#email">#</a></h3>
 
-Send us a message if you want to get involved or just say hello 👋
+Write to us if you want to get involved or just say hello :)
 
-<mark>📧 b i o @ d 8 a . o r g</mark> (minus the spaces)
+<a href="mailto:bio@d8a.org" target="_blank"><button>📧 Send us a message</button></a>
+
+<h3 id="feed">Feed <a class="anchor" href="#feed">#</a></h3>
+
+All of our posts are written by a human (not AI). You can follow our updates via <abbr title="Really Simple Syndication">RSS</abbr>.
+
+<a href="{{ site.baseurl }}/feed" target="_blank"><button>📰 Subscribe to blog</button></a>
 
 <h3 id="social">Social <a class="anchor" href="#social">#</a></h3>
 
-You can also find us at any of the networks below ⭐
+You can also find us at any of the networks below:
 
-- <a href="https://bsky.app/profile/bioshack.bsky.social" target="_blank">Bluesky</a>
-- <a href="https://www.facebook.com/bioshack" target="_blank">Facebook</a>
+- <a href="https://bioshack.bsky.social" target="_blank">Bluesky</a>
+- <a href="https://facebook.com/bioshack" target="_blank">Facebook</a>
 - <a href="https://github.com/bioshack" target="_blank">GitHub</a>
-- <a href="https://www.linkedin.com/company/bioshack" target="_blank">LinkedIn</a>
+- <a href="https://linkedin.com/company/bioshack" target="_blank">LinkedIn</a>
 - <a href="https://twitter.com/bioshack" target="_blank">Twitter/X</a>
 
 <details>
