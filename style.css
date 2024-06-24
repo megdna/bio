@@ -56,7 +56,7 @@ body > * {
 body > header {
   background-color: var(--bg-box);
   border-bottom: 1px solid var(--border);
-  padding: 0.5rem;
+  padding: 1rem 0.5rem 0.5rem;
   text-align: center;
   grid-column: 1 / -1;
 }
@@ -69,7 +69,7 @@ body > header a:hover {
   color: var(--link);
 }
 body > header h1 {
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   max-width: 1200px;
 }
 body > header p {
@@ -191,6 +191,7 @@ button {
   background-color: var(--bg-box);
   border: 1px solid var(--link);
   border-radius: 5px;
+  padding: 2px 5px;
 }
 button:hover {
   background-color: var(--shadow);
