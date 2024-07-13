@@ -32,5 +32,3 @@ defaults:
       path: "media/**"
     values:
       sitemap: false
-
-push again
