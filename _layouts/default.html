@@ -1,17 +1,20 @@
 <!doctype html>
 <html lang="{{ site.lang }}">
   <head>
-    {% include head.html %}
+{% include head.html %}
+{% feed_meta %}
+{% seo %}
+{% include scripts.html %}
   </head>
   <body>
     <header>
-      {% include header.html %}
+{% include header.html %}
     </header>
     <main>
-      {{ content }}
+{{ content }}
     </main>
     <footer>
-      {% include footer.html %}
+{% include footer.html %}
     </footer>
   </body>
 </html>
