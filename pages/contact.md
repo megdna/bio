@@ -5,7 +5,7 @@ title: Contact
 ---
 <h3 id="donate">Donate <a class="anchor" href="#donate">#</a></h3>
 
-If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>. Any little bit helps since we are all volunteers at BioShack!
+If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>!
 
 <a href="https://ko-fi.com/bioshack" target="_blank"><button>☕ Support us on Ko-fi</button></a>
 
