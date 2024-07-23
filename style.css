@@ -1,15 +1,14 @@
-/* Theme Defaults */
+/* Theme Fonts */
 :root {
-  --mono-font: "Andale Mono", "Andale Mono WT", "Bitstream Vera Sans Mono",
+  --mono: "Andale Mono", "Andale Mono WT", "Bitstream Vera Sans Mono",
     Consolas, Courier, "Courier New", "DejaVu Sans Mono", "Liberation Mono",
     "Lucida Console", "Lucida Sans Typewriter", Menlo, Monaco, monospace,
     "Nimbus Mono L", "Ubuntu Mono";
-  --sans-font: -apple-system, Arial, Avenir, "Avenir Next", BlinkMacSystemFont,
+  --sans: -apple-system, Arial, Avenir, "Avenir Next", BlinkMacSystemFont,
     Helvetica, "Helvetica Neue", "Nimbus Sans L", "Noto Sans", Roboto, sans-serif,
     "Segoe UI", system-ui;
-}
 
-:root {
+/* Default Colors */
   --bg: #FFFFFF;
   --bg-box: #E8F2FF;
   --shadow: #C6E0FF;
@@ -36,7 +35,7 @@
 }
 
 html {
-  font-family: var(--sans-font);
+  font-family: var(--sans);
   scroll-behavior: smooth;
 }
 
@@ -100,9 +99,9 @@ header > nav a[aria-current="page"] {
 }
 
 main {
-  padding: 0;
+  padding: 0.25rem 0;
 }
-main nav {
+main > nav {
   margin: 1rem 0 0.5rem;
 }
 main > nav a {
