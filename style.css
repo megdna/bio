@@ -67,21 +67,21 @@ header a:visited {
 header a:hover {
   color: var(--link);
 }
-body > header h1 {
+header h1 {
   margin: 0.5rem auto;
   max-width: 1200px;
 }
-body > header p {
+header p {
   font-style: italic;
   margin: 0.5rem auto;
   max-width: 40rem;
 }
-header > nav {
+header nav {
   line-height: 2;
   padding: 0.5rem 0 0;
 }
-header > nav a,
-header > nav a:visited {
+header nav a,
+header nav a:visited {
   border: 1px solid var(--border);
   border-radius: 5px;
   color: var(--text);
@@ -90,9 +90,9 @@ header > nav a:visited {
   padding: 0.1rem 1rem;
   text-decoration: none;
 }
-header > nav a:hover,
-header > nav a.current,
-header > nav a[aria-current="page"] {
+header nav a:hover,
+header nav a.current,
+header nav a[aria-current="page"] {
   border-color: var(--link);
   color: var(--link);
   cursor: pointer;
