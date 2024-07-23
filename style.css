@@ -52,7 +52,7 @@ body > * {
   grid-column: 2;
 }
 
-body > header {
+header {
   background-color: var(--bg-box);
   border-bottom: 1px solid var(--border);
   padding: 0.75rem 0.5rem 0.5rem;
