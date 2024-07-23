@@ -112,7 +112,7 @@ main nav a:before {
   content: " → ";
 }
 
-body > footer {
+footer {
   border-top: 1px solid var(--border);  
   color: var(--meta);
   font-size: 0.9rem;
