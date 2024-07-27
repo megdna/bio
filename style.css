@@ -250,7 +250,7 @@ sup {
 }
 
 /* Elements */
-article, aside, details, section {
+article, aside, section {
   border: 1px solid var(--border);
   border-radius: 5px;
   margin: 1rem 0;
@@ -278,6 +278,12 @@ section img {
   height: 100px;
 }
 
+details {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin: 1.5rem 0 0.5rem;
+  padding: 0.5rem 1rem;
+}
 summary {
   background-color: var(--bg-box);
   border-radius: 5px;
