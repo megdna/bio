@@ -250,14 +250,14 @@ sup {
 }
 
 /* Elements */
-article, aside {
+article, aside, section {
   border: 1px solid var(--border);
   border-radius: 5px;
-  padding: 1rem;
+  margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 article {
-  margin: 1rem 0;
   width: 100%;
 }
 
