@@ -1,4 +1,4 @@
-/* Theme Fonts */
+/* Fonts */
 :root {
   --mono: "Andale Mono", "Andale Mono WT", "Bitstream Vera Sans Mono",
     Consolas, Courier, "Courier New", "DejaVu Sans Mono", "Liberation Mono",
@@ -8,7 +8,7 @@
     Helvetica, "Helvetica Neue", "Nimbus Sans L", "Noto Sans", Roboto, sans-serif,
     "Segoe UI", system-ui;
 
-/* Default Colors */
+/* Colors */
   --bg: #FFFFFF;
   --bg-box: #E8F2FF;
   --shadow: #C6E0FF;
@@ -30,6 +30,7 @@
 	}
 }
 
+/* Layout */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -127,7 +128,7 @@ footer nav a {
   padding: 0 0.25rem;
 }
 
-/* Standard HTML */
+/* Styles */
 h1, h2, h3, h4, h5, h6, p {
   overflow-wrap: break-word;
 }
@@ -248,7 +249,7 @@ sup {
   top: -0.4em;
 }
 
-/* Special Elements */
+/* Elements */
 article, aside {
   border: 1px solid var(--border);
   border-radius: 5px;
@@ -268,17 +269,6 @@ aside {
 }
 *[dir="rtl"] aside {
   float: left;
-}
-
-article > :first-child,
-aside > :first-child,
-section aside > :first-child {
-  margin-top: 0;
-}
-article > :last-child,
-aside > :last-child,
-section aside > :last-child {
-  margin-bottom: 0;
 }
 
 section {
@@ -365,7 +355,7 @@ table caption {
   margin-bottom: 0.5rem;
 }
 
-/* Optional Classes */
+/* Classes */
 .anchor {
 	font-style: normal;
 	margin-left: .1rem;
