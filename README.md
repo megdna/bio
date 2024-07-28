@@ -1,8 +1,9 @@
-# 🐟 Pond
+# 🐟 Mní (Water in Lakota)
 
 A minimalist theme created by [Megan](https://github.com/megdna) for the small web using elements from:
 
 * [Jekyll](https://github.com/jekyll/jekyll)
+* [Octicons](https://github.com/primer/octicons)
 * [Simple.css](https://github.com/kevquirk/simple.css)
 * [Reasonable Colors](https://github.com/matthewhowell/reasonable-colors)
 
