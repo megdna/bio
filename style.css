@@ -365,6 +365,7 @@ a.anchor:focus,
 
 .icon {
   fill: currentColor;
+  vertical-align: -0.125em;
 }
 
 .next {
