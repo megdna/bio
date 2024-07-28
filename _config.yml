@@ -1,5 +1,4 @@
 # Site Settings
-lang: en
 icon: 🧬
 title: BioShack
 description: Building the Future with Open Science
@@ -11,7 +10,6 @@ permalink: :title
 founded: 2011
 github: bioshack
 goatcounter: bio
-umami: 02af827c-3b5c-44e5-b6f7-a66145bc5ff5
 
 nav:
   - name: About
@@ -23,6 +21,7 @@ nav:
   
 plugins:
   - jekyll-feed
+  - jekyll-octicons
   - jekyll-seo-tag
   - jekyll-sitemap
 
