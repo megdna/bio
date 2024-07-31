@@ -22,6 +22,7 @@ nav:
 plugins:
   - jekyll-feed
   - jekyll-octicons
+  - jekyll-openmoji
   - jekyll-seo-tag
   - jekyll-sitemap
 
