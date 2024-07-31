@@ -10,7 +10,7 @@ We are a group of bioneers and citizen scientists building a better future with 
 ### Say Hello
 
 <ul style="list-style-type:none; padding-left:0">
-<li><svg class="icon" height="16" id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+<li><svg class="icon" height="20" id="emoji" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
   <g id="line">
     <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m24,47.4166c-3.6825-3.2959-6-8.0856-6-13.4166h36c0,5.331-2.3175,10.1207-6,13.4166"/>
     <path fill="none" stroke="#000" stroke-linecap="round" stroke-width="2" d="m51,45h4.5c3.0376,0,5.5-2.4624,5.5-5.5s-2.4624-5.5-5.5-5.5h-2.5"/>
