@@ -10,7 +10,7 @@ We are a group of bioneers and citizen scientists building a better future with 
 ### Say Hello
 
 <ul style="list-style-type:none; padding-left:0">
-<li>{% openmoji coffee class:"icon" height:16 %} <a href="https://ko-fi.com/bioshack" target="_blank" data-umami-event="kofi">Buy us coffee or tea</a></li>
+<li>:coffee:! <a href="https://ko-fi.com/bioshack" target="_blank" data-umami-event="kofi">Buy us coffee or tea</a></li>
 <li>{% octicon person-add class:"icon" height:16 %} <a href="https://github.com/bioshack" target="_blank" data-umami-event="github">Follow us on socials</a></li>
 <li>{% octicon mail class:"icon" height:16 %} <a href="mailto:bio@d8a.org" target="_blank" data-umami-event="email">Send us a message</a></li>
 </ul>
