@@ -3,5 +3,5 @@
 {% for item in site.nav %}
 <a href="{{ item.link | prepend: site.baseurl | prepend: site.url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
 {% endfor %}
-<a href="{{ site.baseurl }}/feed" target="_blank">{% octicon rss aria-label:rss class:"icon" height:16 %}</a>
 </nav>
+<a href="{{ site.baseurl }}/feed" target="_blank">{% octicon rss aria-label:rss class:"icon" height:16 %}</a>
