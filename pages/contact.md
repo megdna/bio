@@ -5,13 +5,13 @@ title: Contact
 ---
 <h3 id="donate">Donate <a class="anchor" href="#donate">#</a></h3>
 
-If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>!
+If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>.
 
 <a href="https://ko-fi.com/bioshack" target="_blank" data-umami-event="kofi"><button>☕ Support us on Ko-fi</button></a>
 
 <h3 id="email">Email <a class="anchor" href="#email">#</a></h3>
 
-Write to us if you want to get involved or just say hello :)
+Write to us if you want to get involved or just say hello (no spam though).
 
 <a href="mailto:bio@d8a.org" target="_blank" data-umami-event="email"><button>📧 Send us a message</button></a>
 
@@ -33,5 +33,5 @@ You can also find us at any of the networks below:
 
 <details>
 <summary>Elsewhere</summary>
-<a href="https://codeberg.org/bio" target="_blank" data-umami-event="codeberg">Codeberg</a> | <a href="https://fe.disroot.org/@bio" target="_blank" data-umami-event="fedi">Fediverse</a> | <a href="https://opencollective.com/bio" target="_blank" data-umami-event="oc">Open Collective</a>
+<a href="https://codeberg.org/bio" target="_blank" data-umami-event="codeberg">Codeberg</a> | <a href="https://fe.disroot.org/@bio" target="_blank" data-umami-event="fedi">Fediverse</a>
 </details>

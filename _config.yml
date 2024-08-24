@@ -9,7 +9,6 @@ baseurl: "/bio"
 permalink: :title
 
 founded: 2011
-email: bio@d8a.org
 github: bioshack
 goatcounter: bio
 
