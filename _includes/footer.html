@@ -3,5 +3,5 @@
 {% for item in site.nav %}
 <a href="{{ item.link | prepend: site.baseurl | prepend: site.url }}">{{ item.name }}</a>
 {% endfor %}
-<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="feed">{% octicon rss aria-label:feed class:"icon" height:16 %}</a>
+<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="rss">{% octicon rss aria-label:rss class:"icon" height:16 %}</a>
 </nav>

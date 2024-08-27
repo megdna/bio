@@ -33,5 +33,5 @@ You can also find us at any of the networks below:
 
 <details>
 <summary>Elsewhere</summary>
-<a href="https://codeberg.org/bio" target="_blank" data-goatcounter-click="codeberg">Codeberg</a> | <a href="https://fe.disroot.org/@bio" target="_blank" data-goatcounter-click="fedi">Fediverse</a>
+<a href="https://codeberg.org/bio" target="_blank" data-goatcounter-click="codeberg">Codeberg</a> ⁂ <a href="https://fe.disroot.org/@bio" target="_blank" data-goatcounter-click="fedi">Fediverse</a>
 </details>
