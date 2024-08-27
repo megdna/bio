@@ -37,11 +37,11 @@ This is an `article` showing some basic styling.
   <p>Subscript: H<sub>2</sub>O</p>
   <p>Superscript<sup>1</sup></p>
   <p><u>Underlined</u></p>
-  <p><a href="https://example.com" target="_blank">URL</a></p>
+  <p><a href="/">URL</a></p>
   <p><abbr title="Uniform Resource Locator">URL</abbr> Abbreviated</p>
   <p><mark>Highlighted</mark></p>
-  <p><mark>Highlighted <a href="https://example.com" target="_blank">URL</a></mark></p>
-  <p><a href="https://example.com" target="_blank"><button>Button</button></a></p>
+  <p><mark>Highlighted <a href="/">URL</a></mark></p>
+  <p><a href="/"><button>Button</button></a></p>
 </article>
 
 <h3 id="aside">Aside <a class="anchor" href="#aside">#</a></h3>
@@ -58,7 +58,7 @@ Here is a `section` with an `img`.
 
 <section>
   <img src="{{ site.baseurl }}/media/blue.jpg" alt="Illustration of two people in a boat on a lake with blue hues">
-  <h4><a href="https://example.com" target="_blank">Post</a></h4>
+  <h4><a href="/">Post</a></h4>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <cite>Date</cite>
 </section>
