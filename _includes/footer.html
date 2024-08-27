@@ -1,2 +1,7 @@
 <p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" data-umami-event="cc">CC</a> &copy; {{ site.founded }}-{{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}">{{ site.title }}</a></p>
-<nav>{% for item in site.nav %}<a href="{{ item.link | prepend: site.baseurl | prepend: site.url }}">{{ item.name }}</a>{% endfor %}<a href="{{ site.baseurl }}/feed" target="_blank" data-umami-event="feed">{% octicon rss aria-label:feed class:"icon" height:16 %}</a></nav>
+<nav>
+{% for item in site.nav %}
+<a href="{{ item.link | prepend: site.baseurl | prepend: site.url }}">{{ item.name }}</a>
+{% endfor %}
+<a href="{{ site.baseurl }}/feed" target="_blank" data-umami-event="feed">{% octicon rss aria-label:feed class:"icon" height:16 %}</a>
+</nav>
