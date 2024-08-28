@@ -27,7 +27,7 @@ You can also find us at any of the networks below:
 
 - <a href="https://bioshack.bsky.social" target="_blank" data-goatcounter-click="bluesky">Bluesky</a>
 - <a href="https://facebook.com/bioshack" target="_blank" data-goatcounter-click="facebook">Facebook</a>
-- <a href="https://github.com/bioshack" target="_blank" data-goatcounter-click="github">GitHub</a> < >
+- <a href="https://github.com/bioshack" target="_blank" data-goatcounter-click="github">GitHub</a> ✔
 - <a href="https://linkedin.com/company/bioshack" target="_blank" data-goatcounter-click="linkedin">LinkedIn</a>
 - <a href="https://twitter.com/bioshack" target="_blank" data-goatcounter-click="twitter">Twitter/X</a>
 
