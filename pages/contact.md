@@ -19,7 +19,7 @@ Write to us if you want to get involved or just say hello (no spam though).
 
 All of our posts are written by a human (not AI). You can follow our updates via <abbr title="Really Simple Syndication">RSS</abbr>.
 
-<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="rss"><button>📰 Subscribe to blog</button></a>
+<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="subscribe"><button>📰 Subscribe to blog</button></a>
 
 <h3>Social</h3>
 
@@ -27,7 +27,7 @@ You can also find us at any of the networks below:
 
 - <a href="https://bioshack.bsky.social" target="_blank" data-goatcounter-click="bluesky">Bluesky</a>
 - <a href="https://facebook.com/bioshack" target="_blank" data-goatcounter-click="facebook">Facebook</a>
-- <a href="https://github.com/bioshack" target="_blank" data-goatcounter-click="github">GitHub</a> {% octicon mark-github class:"icon" height:16 %}
+- <a href="https://github.com/bioshack" target="_blank" data-goatcounter-click="github">GitHub</a> < >
 - <a href="https://linkedin.com/company/bioshack" target="_blank" data-goatcounter-click="linkedin">LinkedIn</a>
 - <a href="https://twitter.com/bioshack" target="_blank" data-goatcounter-click="twitter">Twitter/X</a>
 

@@ -3,7 +3,7 @@ layout: post
 permalink: /posts
 title: Posts
 ---
-<div class="notice">Subscribe to <a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="rss">feed</a> for updates on our projects.</div>
+<div class="notice">Subscribe to <a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="feed">feed</a> for updates on our <a href="{{ site.baseurl }}/tags">projects</a>.</div>
 
 {% for post in site.posts %}
 <section>
