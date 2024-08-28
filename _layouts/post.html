@@ -5,6 +5,6 @@ layout: default
 {% if page.description %}<div class="notice">{{ page.description }}</div>{% endif %}
 {% if page.show %}<figure><img alt="{{ page.alt }}" src="{{ page.image | absolute_url }}"><figcaption>{{ page.caption }}</figcaption></figure>{% endif %}
 {{ content }}
-{% if page.date %}<cite>Updated on {{ page.date | date: "%B %d, %Y" }}</cite><div class="next">{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags#{{ tag }}"><button>{% octicon tag class:"icon" height:16 %} {{ tag }}</button></a>{% endfor %}</div><hr>{% endif %}
+{% if page.date %}<cite>Updated on {{ page.date | date: "%B %d, %Y" }}</cite>{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags#{{ tag }}" class="next"><button>{% octicon tag class:"icon" height:16 %} {{ tag }}</button></a>{% endfor %}<hr>{% endif %}
 {% if page.previous.url %}&laquo; <a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>{% endif %}
 {% if page.next.url %}<div class="next"><a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a> &raquo;</div>{% endif %}
