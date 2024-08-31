@@ -1,7 +1,7 @@
-<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" data-goatcounter-click="cc">CC</a> &copy; {{ site.founded }}-{{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}">{{ site.title }}</a></p>
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" data-goatcounter-click="cc" data-umami-event="cc">CC</a> &copy; {{ site.founded }}-{{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}">{{ site.title }}</a></p>
 <nav>
 {% for item in site.nav %}
 <a href="{{ item.link | prepend: site.baseurl | prepend: site.url }}">{{ item.name }}</a>
 {% endfor %}
-<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="rss">{% octicon rss aria-label:rss class:"icon" height:16 %}</a>
+<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="rss" data-umami-event="rss">{% octicon rss aria-label:rss class:"icon" height:16 %}</a>
 </nav>

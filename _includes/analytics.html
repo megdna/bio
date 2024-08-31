@@ -1,12 +1,7 @@
-{% if jekyll.environment == "production" %}
+{% if site.goatcounter %}
 <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 <noscript><img src="https://{{ site.goatcounter }}.goatcounter.com/count?p=/ns"></noscript>
-
-<script type="text/javascript">
-var sc_project=13031717; 
-var sc_invisible=1; 
-var sc_security="488ef692"; 
-</script>
-<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><img src="https://c.statcounter.com/13031717/0/488ef692/1/"></noscript>
+{% endif %}
+{% if site.umami %}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.umami }}"></script>
 {% endif %}
