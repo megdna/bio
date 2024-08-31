@@ -7,7 +7,7 @@ title: Contact
 
 If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>.
 
-<a href="https://ko-fi.com/bioshack" target="_blank" data-goatcounter-click="kofi" data-umami-event="kofi"><button>☕ Support us on Ko-fi</button></a>
+<a href="https://ko-fi.com/bioshack" target="_blank"><button data-goatcounter-click="kofi" data-umami-event="kofi">☕ Support us on Ko-fi</button></a>
 
 <h3>Email</h3>
 
