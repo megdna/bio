@@ -7,19 +7,19 @@ title: Contact
 
 If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>.
 
-<a href="https://ko-fi.com/bioshack" target="_blank"><button data-goatcounter-click="kofi" data-umami-event="kofi">☕ Support us on Ko-fi</button></a>
+<a href="https://ko-fi.com/bioshack" target="_blank" data-goatcounter-click="kofi"><button data-umami-event="kofi">☕ Support us on Ko-fi</button></a>
 
 <h3>Email</h3>
 
 Write to us if you want to get involved or just say hello (no spam though).
 
-<a href="mailto:bio@d8a.org" target="_blank"><button data-goatcounter-click="email" data-umami-event="email">📧 Send us a message</button></a>
+<a href="mailto:bio@d8a.org" target="_blank" data-goatcounter-click="email"><button data-umami-event="email">📧 Send us a message</button></a>
 
 <h3>Feed</h3>
 
 All of our posts are written by a human (not AI). You can follow our updates via <abbr title="Really Simple Syndication">RSS</abbr>.
 
-<a href="{{ site.baseurl }}/feed" target="_blank"><button data-goatcounter-click="subscribe" data-umami-event="subscribe">📰 Subscribe to blog</button></a>
+<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="subscribe"><button data-umami-event="subscribe">📰 Subscribe to blog</button></a>
 
 <h3>Social</h3>
 
