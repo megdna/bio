@@ -41,7 +41,7 @@ This is an `article` showing some basic styling.
   <p><abbr title="Uniform Resource Locator">URL</abbr> Abbreviated</p>
   <p><mark>Highlighted</mark></p>
   <p><mark>Highlighted <a href="{{ site.baseurl }}">URL</a></mark></p>
-  <p><a href="{{ site.baseurl }}"><button>Button</button></a></p>
+  <p><button><a href="{{ site.baseurl }}">Button</a></button></p>
 </article>
 
 <h3 id="aside">Aside <a class="anchor" href="#aside">#</a></h3>
