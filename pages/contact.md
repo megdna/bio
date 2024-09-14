@@ -13,7 +13,7 @@ If you like what we are doing, please consider supporting our <a href="{{ site.b
 
 Write to us if you want to get involved or just say hello (no spam though).
 
-<a href="mailto:bio@d8a.org" target="_blank" data-goatcounter-click="email"><button data-umami-event="email">📧 Send us a message</button></a>
+<a href="https://letterbird.co/go" target="_blank" data-goatcounter-click="email"><button data-umami-event="email">📧 Send us a message</button></a>
 
 <h3>Feed</h3>
 
