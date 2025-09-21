@@ -1,16 +1,15 @@
 # Site Settings
 lang: en
-logo: bio.png
-title: BioShack
-description: Building the Future with Open Science
+icon: 🧬
+title: D8A
+description: Data, Discovery & Decision Science
 
 url: "https://megdna.github.io"
 baseurl: "/bio"
 permalink: :title
 
-founded: 2011
-github: bioshack
-goatcounter: bio
+founded: 2015
+goatcounter: d8a
 umami: 03076e42-dd66-43a9-9a24-095a5bf3344f
 
 nav:
