@@ -4,8 +4,8 @@ logo: bio.png
 title: BioShack
 description: Building the Future with Open Science
 
-url: "https://bioshack.github.io"
-baseurl: ""
+url: "https://megdna.github.io"
+baseurl: "/bio"
 permalink: :title
 
 founded: 2011
