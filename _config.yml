@@ -1,11 +1,11 @@
 # Site Settings
 lang: en
-icon: 🧬
+logo: bio.png
 title: BioShack
 description: Building the Future with Open Science
 
-url: "https://megdna.github.io"
-baseurl: "/bio"
+url: "https://bioshack.github.io"
+baseurl: ""
 permalink: :title
 
 founded: 2011
@@ -22,6 +22,7 @@ nav:
     link: /posts
   
 plugins:
+  - jekyll-archives
   - jekyll-feed
   - jekyll-octicons
   - jekyll-seo-tag

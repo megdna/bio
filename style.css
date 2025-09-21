@@ -1,354 +1,355 @@
-/* Fonts */
+/* Defaults */
 :root {
-  --mono: "Andale Mono", "Andale Mono WT", "Bitstream Vera Sans Mono",
-    Consolas, Courier, "Courier New", "DejaVu Sans Mono", "Liberation Mono",
-    "Lucida Console", "Lucida Sans Typewriter", Menlo, Monaco, monospace,
-    "Nimbus Mono L", "Ubuntu Mono";
-  --sans: -apple-system, Arial, Avenir, "Avenir Next", BlinkMacSystemFont,
-    Helvetica, "Helvetica Neue", "Nimbus Sans L", "Noto Sans", Roboto, sans-serif,
-    "Segoe UI", system-ui;
+  --mono: ui-monospace, monospace;
+  --sans: system-ui, sans-serif;
 
-/* Colors */
-  --bg: #FFFFFF;
-  --bg-box: #E8F2FF;
-  --shadow: #C6E0FF;
-  --border: #008FDB;
-  --link: #0071AF;
-  --meta: #003B5E;
-  --text: #001C30;
+  --main: #ffffff;
+  --body: #eceff4;
+  --head: #e5e9f0;
+  --line: #d8dee9;
+  --link: #5e81ac;
+  --next: #81a1c1;
+  --text: #2e3440;
+  --meta: #434c5e;
+  --code: #bf616a;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #001C30;
-    --bg-box: #003B5E;
-    --shadow: #003B5E;
-    --border: #0071AF;
-    --link: #008FDB;
-    --meta: #C6E0FF;
-    --text: #E8F2FF;
-	}
+    --main: #2e3440;
+    --body: #3b4252;
+    --head: #434c5e;
+    --line: #4c566a;
+    --link: #81a1c1;
+    --next: #5e81ac;
+    --text: #eceff4;
+    --meta: #d8dee9;
+  }
 }
-
-/* Layout */
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
 html {
-  font-family: var(--sans);
+	overflow-y: scroll;
   scroll-behavior: smooth;
+  text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
-
+/* Theme */
 body {
-  background-color: var(--bg);
+  background: var(--body);
+  background-image: linear-gradient(to right, var(--head) 1px, transparent 1px), linear-gradient(to bottom, var(--head) 1px, transparent 1px);
+  background-size: 1rem 1rem;
   color: var(--text);
+  font-family: var(--sans);
   font-size: 1rem;
   line-height: 1.5;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr min(45rem, 90%) 1fr;
+  margin: 0 auto;
+  max-width: 45rem;
+  padding: 1rem;
 }
-body * {
-  grid-column: 2;
-}
-
 header {
-  background-color: var(--bg-box);
-  border-bottom: 1px solid var(--border);
-  padding: 0.75rem 0.5rem 0.5rem;
+  background: var(--main);
+  border-bottom: 1px solid var(--line);
+  border-radius: 6px 6px 0 0;
+  margin: 2rem 0 0;
+  padding: 2rem 0.5rem 1rem;
   text-align: center;
-  grid-column: 1 / -1;
 }
-header a,
-header a:visited {
+header a {
   color: var(--text);
   text-decoration: none;
 }
 header a:hover {
   color: var(--link);
+  transition: all 0.25s ease;
 }
 header h1 {
-  margin: 0.5rem auto;
-  max-width: 1200px;
+  padding: 0;
 }
-header p {
-  font-style: italic;
-  margin: 0.5rem auto;
-  max-width: 40rem;
+header img {
+  background: var(--main);
+  border: 2px solid var(--main);
+  border-radius: 1000px;
+  margin-top: -4.5rem;
+  height: 80px;
+  width: 80px;
+}
+header img:hover {
+  border: 2px solid var(--text);
+  transition: all 0.25s ease;
 }
 header nav {
-  line-height: 2;
-  padding: 0.5rem 0 0;
+  padding: 0.25rem;
 }
-header nav a,
-header nav a:visited {
-  border: 1px solid var(--border);
-  border-radius: 5px;
+header nav a {
+  background: var(--main);
+  border: 1px solid var(--line);
+  border-radius: 6px;
   color: var(--text);
-  display: inline-block;
-  margin: 0 0.25rem 1rem;
-  padding: 0.1rem 1rem;
-  text-decoration: none;
+  font-size: 0.75rem;
+  margin: 0.125rem;
+  padding: 0.375rem 0.5rem;
+  text-transform: uppercase;
 }
-header nav a:hover,
-header nav a.current,
-header nav a[aria-current="page"] {
-  border-color: var(--link);
-  color: var(--link);
-  cursor: pointer;
+header nav a:hover {
+  border: 1px solid var(--link);
 }
-
 main {
-  padding: 0.25rem 0;
+  background: var(--main);
+  border-radius: 0 0 6px 6px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
 }
-main nav {
-  margin: 1rem 0 0.5rem;
-}
-main nav a {
-  font-weight: bold;
-  text-decoration: none;
-}
-main nav a:before {
-  content: " → ";
-}
-
 footer {
-  border-top: 1px solid var(--border);
   color: var(--meta);
-  font-size: 0.9rem;
-  margin-top: 1rem;
-  padding: 1rem;
+  font-size: 0.875rem;
+  margin: 0 auto;
+  padding-top: 0.75rem;
   text-align: center;
 }
-footer p {
-  margin: 0.5rem auto;
-}
 footer nav a {
+  font-weight: normal;
+  text-decoration: underline;
   padding: 0 0.25rem;
 }
-
 /* Typography */
 h1, h2, h3, h4, h5, h6, p {
-  overflow-wrap: break-word;
-}
-h1, h2, h3 {
-  line-height: 1.1;
-  margin: 1.5rem 0 1rem;
-}
-h4, h5, h6, p {
-  margin: 1rem 0 0.5rem;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  line-height: 1;
 }
 h2 {
-  font-size: 2.1rem;
+  font-size: 1.75rem;
+  line-height: 1.1;
 }
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
 h4 {
   font-size: 1.25rem;
+  line-height: 1.3;
 }
 h5 {
-  font-size: 1.15rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
 }
-h6 {
-  font-size: 0.96rem;
+h6, p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
-
-ol, ul {
-  line-height: 1.75;
-  margin: 0.5rem 0;
+p + p {
+  margin: 0 auto;
+  padding-top: 0;
 }
-
 a {
-	color: var(--link);
+  color: var(--link);
+  transition: all 0.25s ease;
 }
-a:active,
-a:hover,
-a:visited {
-	color: var(--border);
+a:hover {
+  color: var(--next);
   text-decoration: none;
 }
-
-/* Styles */
-abbr[title] {
+abbr {
   cursor: help;
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
 }
-
-blockquote {
-  border-inline-start: 0.25rem solid var(--link);
-  margin-inline-start: 1rem;
-  margin-inline-end: 0;
-  margin-block: 1rem;
-  padding: 0 1rem;
-}
-
 button {
-  background-color: var(--bg-box);
-  border: 1px solid var(--link);
-  border-radius: 5px;
-  padding: 2px 5px;
+  background: var(--main);
+  border: 1px solid var(--meta);
+  border-radius: 6px;
+  color: var(--meta);
+  padding: 4px 6px;
+  transition: all 0.25s ease;
 }
 button:hover {
-  background-color: var(--shadow);
-  border: 1px solid var(--border);
+  background: var(--body);
+  border: 1px solid var(--link);
+  color: var(--link);
 }
-button, cite, dd {
+cite, time {
   color: var(--meta);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
-
-code, mark {
-  background-color: var(--bg-box);
-  border-radius: 5px;
-  color: var(--text);
-  padding: 2px 5px;
-}
-code, kbd, pre, samp {
-  color: var(--meta);
+code, samp, var {
+  color: var(--code);
   font-family: var(--mono);
-  line-height: normal;
+  font-size: 0.875rem;
 }
-kbd {
-  border: 1px solid var(--meta);
-  border-bottom: 3px solid var(--meta);
-  border-radius: 5px;
-  padding: 0.1rem 0.4rem;
+dd {
+  margin-left: 1.5rem;
 }
-pre {
-  background-color: var(--bg-box);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 1rem;
-  margin: 1rem 0;
-  max-width: 100%;
-  overflow: auto;
+dl, ol, ul {
+  line-height: 1.6;
+  margin: 0 auto;
+  padding-left: 1.5rem;
 }
-pre code {
-  margin: 0;
-  padding: 0;
-}
-  
 hr {
-	border: 1px dashed var(--border);
-  margin: 1.25rem 0 1rem;
+	border: 1px dashed var(--line);
+  margin: 0.5rem auto;
 }
-
+mark {
+  background: var(--head);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  padding: 1px 4px 2px;
+}
+nav {
+  padding: 0.5rem auto;
+}
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+q::after {
+  color: var(--next);
+  content: "\275E";
+}
+q::before {
+  color: var(--next);
+  content: "\275D";
+}
 sub, sup {
-  vertical-align: baseline;
-  position: relative;
+  line-height: 1;
 }
-sub { 
-  top: 0.3em; 
-}
-sup {
-  top: -0.4em;
-}
-
 /* Elements */
 article {
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  margin: 1.5rem 0 0.5rem;
-  padding: 0 1rem 1rem;
+  border: 1px solid var(--head);
+  border-radius: 6px;
+  margin: 1rem auto;
+  padding: 0 0.5rem 0 0.25rem;
+  transition: all 0.25s ease;
 }
-
-aside {
-  background-color: var(--bg-box);
-  border: 1px solid var(--border);
-  border-radius: 5px;
+article:hover {
+  box-shadow: 2px 2px 10px var(--line);
+}
+article img {
+  background: var(--body);
+  border: 1px solid var(--line);
+  border-radius: 1000px;
   float: right;
-  margin: 0;
-  padding: 0 1rem 1rem;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+aside {
+  background: var(--body);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  float: right;
+  padding: 0 0.5rem;
   width: 40%;
 }
-*[dir="rtl"] aside {
-  float: left;
+blockquote {
+  border: 1px solid var(--head);
+  border-inline-start: 4px solid var(--next);
+  border-radius: 0 6px 6px 0;
+  margin: 0.5rem auto;
+  padding: 0.25rem;
 }
-
-section {
-  border: 1px solid var(--bg-box);
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px var(--shadow);
-  margin: 1.5rem 0 0.5rem;
-  padding: 0 1rem 1rem;
-}
-section img {
-  float: right;
-  height: 100px;
-  margin: 1rem 0 0;
-}
-
 details {
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  margin: 1.5rem 0 0.5rem;
+  border: 1px solid var(--head);
+  border-radius: 6px;
+  margin: 0.5rem auto;
   padding: 0.5rem 1rem;
+}
+details p {
+  padding: 0.25rem 0.875rem 0;
 }
 summary {
-  background-color: var(--bg-box);
-  border-radius: 5px;
-  cursor: pointer;
   font-weight: bold;
-  margin: -0.5rem -1rem;
-  padding: 0.5rem 1rem;
-  word-break: break-all;
 }
-details[open] > summary {
-  margin-bottom: 0.5rem;
+kbd {
+  border: 1px solid var(--line);
+  border-bottom: 3px solid var(--line);
+  border-radius: 6px;
+  font-family: var(--mono);
+  padding: 2px 4px;
 }
-
+pre {
+  background: var(--body);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--meta);
+  font-family: var(--mono);
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin: 1rem auto;
+  overflow: auto;
+  padding: 0.5rem 0.75rem;
+}
 audio, img, picture, video {
-  border-radius: 5px;
-  height: auto;
-  margin: 0.5rem 0 0;
+  border-radius: 6px;
+  margin: 0.5rem auto;
   max-width: 100%;
 }
-
 embed, iframe, object {
-  border: 1px solid var(--bg-box);
-  border-radius: 5px;
-  margin: 0.5rem 0 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin: 0.5rem auto;
   width: 100%;
 }
-
 figure {
-  margin: 0;
+  margin: 0 auto;
   overflow-x: auto;
-  text-align: center;
 }
 figcaption {
   color: var(--meta);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+	font-style: italic;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
-
 table {
   border-collapse: collapse;
-  margin: 0.5rem 0;
-}
-td, th {
-  border: 1px solid var(--border);
-  padding: 0.5rem;
-  text-align: start;
-}
-th,
-tr:nth-child(even) {
-  background-color: var(--bg-box);
+  margin: 0.5rem auto;
+  width: 100%;
 }
 table caption {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-
+td, th {
+  border: 1px solid var(--line);
+  padding: 0.5rem;
+}
+th, tr:nth-child(even) {
+  background: var(--body);
+}
+section {
+  margin: 0.5rem auto;
+}
+section ul {
+  padding: 0;
+}
+section li {
+  border-bottom: 1px solid var(--head);
+  overflow: hidden;
+  padding: 0.5rem;
+}
+section li:last-child {
+  border-bottom: none;
+}
+section li a {
+  float: left;
+  font-weight: bold;
+  max-width: calc(100% - 6.25rem);
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section li time {
+  float: right;
+}
 /* Classes */
 .anchor {
-	font-style: normal;
-	margin-left: .1rem;
+	margin-left: 0.125rem;
 	text-decoration: none;
 }
 a.anchor,
@@ -357,26 +358,114 @@ a.anchor:visited {
 }
 a.anchor:focus,
 a.anchor:hover {
-	text-decoration: underline;
+	color: var(--next);
 }
-a.anchor:focus,
-:hover > a.anchor {
-	color: var(--meta);
+.gallery {
+  display: grid;
+  grid-auto-rows: 10rem;
+  grid-gap: 0.75rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem 0;
 }
-
+.gallery img {
+  height: 100%;
+  width: 100%;  
+  object-fit: cover;
+  transition: transform 0.25s ease-out;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
 .icon {
   fill: currentColor;
-  vertical-align: -0.15em;
+  height: 0.875rem;
+  vertical-align: -0.15rem;
 }
-
+.message {
+  background: radial-gradient(circle, var(--link) 0%, var(--head) 100%);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 1px 2px 4px #000000;
+}
+.message a {
+  color: #ffffff;
+  text-decoration-style: wavy;  
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
 .next {
   float: right;
 }
-
 .notice {
-  background: var(--bg-box);
-  border: 1px solid var(--border);
-  border-radius: 5px;
+  background: var(--body);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin: 1rem auto;
+  padding: 0.5rem 0.75rem;
+}
+.tab {
+  margin: 1rem auto;
+}
+.tab a {
+  border: 1px solid var(--line);
+  border-bottom: 3px solid var(--line);
+  border-radius: 8px 8px 0 0;
+  margin: 0.125rem;
+  padding: 4px 6px;
+	text-decoration: none;
+  transition: all 0.25s ease;
+}
+.tab a:hover,
+.tab-current {
+  background: var(--body);
+}
+.testimonial {
+  display: grid;
+  grid-gap: 0.75rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1rem auto;
+}
+.testimonial blockquote {
+  background: var(--body);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  margin: 0;
+  padding: 0 1rem 0.5rem 0.5rem;
+}
+.testimonial blockquote::before {
+  color: var(--next);
+  content: "\275E";
+  float: right;
+  font-size: 2.5rem;
+}
+.timeline ul {
+  border-left: 6px solid var(--next);
+  margin: 0.5rem 0 0.5rem 0.25rem;
+  padding-left: 1.125rem;
+}
+.timeline li {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  list-style: none; 
   margin: 1rem 0;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+.timeline h4 {
+  position: relative;
+}
+.timeline h4::before {
+  border: 5px solid var(--text);
+  border-radius: 1000px;
+  content: "";
+  height: 15px;
+  width: 15px; 
+  top: 15px;
+  left: -38px;
+  position: absolute;
 }
