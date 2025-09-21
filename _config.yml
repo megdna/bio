@@ -1,14 +1,15 @@
 # Site Settings
 lang: en
-title: D8A
-description: Data, Discovery & Decision Science
+title: BioShack
+description: Building the Future with Open Science
 
 url: "https://megdna.github.io"
 baseurl: "/bio"
 permalink: :title
 
+code: https://github.com/bioshack
+donate: https://ko-fi.com/bioshack
 email: info@d8a.org
-github: megdna/bio
 goatcounter: d8a
 umami: 03076e42-dd66-43a9-9a24-095a5bf3344f
 
