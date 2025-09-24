@@ -282,6 +282,7 @@ kbd {
   border-bottom: 3px solid var(--line);
   border-radius: 6px;
   font-family: var(--mono);
+  font-size: 0.875rem;
   padding: 2px 4px;
 }
 pre {
@@ -299,6 +300,7 @@ pre {
 audio, img, picture, video {
   border-radius: 6px;
   margin: 0.5rem auto;
+  padding: 0;
   max-width: 100%;
 }
 embed, iframe, object {
