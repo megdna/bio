@@ -176,7 +176,7 @@ button {
   border: 1px solid var(--meta);
   border-radius: 6px;
   color: var(--meta);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   padding: 4px 6px;
   transition: all 0.25s ease;
 }
