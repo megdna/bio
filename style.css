@@ -115,6 +115,9 @@ footer {
   margin: 0 auto;
   padding: 0.25rem 0.25rem 0.25rem 1rem;
 }
+footer a {
+  text-decoration: none;
+}
 footer nav a {
   color: var(--meta);
   font-weight: normal;
