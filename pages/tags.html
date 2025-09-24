@@ -18,7 +18,7 @@ sitemap: false
 {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
 <h3 id="{{ this_word | cgi_escape }}">{{ this_word }}</h3>
 <!--Lists all posts corresponding to specific tag-->
-<ul style="list-style-type:none; padding-left:0">
+<ul style="list-style-type:none; padding-left:0.5rem">
 {% for post in site.tags[this_word] %}{% if post.title != null %}
 <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <cite>{{ post.date | date_to_string }}</cite></li>
 {% endif %}{% endfor %}

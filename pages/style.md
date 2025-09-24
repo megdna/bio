@@ -5,7 +5,7 @@ title: Style Demo
 description: This is a demonstration of the elements in CSS.
 sitemap: false
 ---
-<h3 id="top">Navigtion <a class="anchor" href="#top">#</a></h3>
+<h3 id="top">Navigation <a class="anchor" href="#top">#</a></h3>
 <nav>
   → <a href="#article">Article</a>
   → <a href="#aside">Aside</a>
