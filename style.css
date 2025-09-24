@@ -198,7 +198,7 @@ dd {
 }
 dl, ol, ul {
   line-height: 1.6;
-  margin: 0.5rem auto;
+  margin: 0 0 0.5rem;
   padding-left: 1.5rem;
 }
 hr {
