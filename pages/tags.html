@@ -25,13 +25,12 @@ sitemap: false
 </ul>
 {% endunless %}{% endfor %}
 
-<section>
   <h3>Pages</h3>
   <ul>
+    <li><a href={{site.baseurl}}>Home</a></li>
     {% for page in site.pages %}
       {% if page.categories contains "Pages" %}
         <li><a href={{site.baseurl}}/{{page.url}}>{{page.title}}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
-</section>
