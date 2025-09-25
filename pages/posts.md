@@ -2,6 +2,7 @@
 layout: page
 permalink: /posts
 title: Posts
+categories: [Pages]
 ---
 <div class="notice">Subscribe to <a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="feed" data-umami-event="feed">feed</a> for updates on our projects.</div>
 

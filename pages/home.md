@@ -2,6 +2,7 @@
 layout: page
 permalink: /
 title: Welcome
+categories: [Pages]
 ---
 We are a group of bioneers and citizen scientists building a better future with open science. Join us in hacking our way to a civil society!
 

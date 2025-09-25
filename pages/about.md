@@ -2,6 +2,7 @@
 layout: page
 permalink: /about
 title: About
+categories: [Pages]
 ---
 <a href="{{ site.baseurl }}">BioShack</a> is a business incubator and think tank where bioneers and citizen scientists come together to build apps and hacks that better our world. The organization supports a <abbr title="Do It Yourself">DIY</abbr> culture where information and technology are shared freely for the purpose of developing socially responsible solutions.
 

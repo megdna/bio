@@ -2,6 +2,7 @@
 layout: page
 permalink: /contact
 title: Contact
+categories: [Pages]
 ---
 <h3>Donate</h3>
 

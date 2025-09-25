@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /style
-title: Style Demo
+title: Styles
 description: This is a demonstration of the elements in CSS.
 categories: [Pages]
 sitemap: false
