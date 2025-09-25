@@ -3,6 +3,7 @@ layout: page
 permalink: /style
 title: Style Demo
 description: This is a demonstration of the elements in CSS.
+category: [Pages]
 sitemap: false
 ---
 <nav id="top">
