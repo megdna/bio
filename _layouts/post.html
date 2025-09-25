@@ -9,5 +9,5 @@ layout: default
 <hr>
 <p> 
 &laquo; {% if page.previous.url %}<a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>{% else %}<a href="{{ site.baseurl }}/posts">Pages</a>{% endif %}
-<div class="next">{% if page.next.url %}<a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a>{% else %}<a href="{{ site.baseurl }}/posts">Pages</a>{% endif %} &raquo;</div>
+<span class="next">{% if page.next.url %}<a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a>{% else %}<a href="{{ site.baseurl }}/posts">Pages</a>{% endif %} &raquo;</span>
 </p>
