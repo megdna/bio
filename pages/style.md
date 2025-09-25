@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 permalink: /style
 title: Style Demo
 description: This is a demonstration of the elements in CSS.
