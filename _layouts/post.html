@@ -7,7 +7,7 @@ layout: default
 {{ content }}
 {% if page.date %}<p><cite>Updated on {{ page.date | date: "%B %d, %Y" }}</cite> {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags#{{ tag }}" class="next"><button># {{ tag }}</button></a>{% endfor %}</p>{% endif %}
 <hr>
-  <p>
-  {% if page.previous.url %}&laquo; <a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>{% else %}&laquo; <a href="{{ site.baseurl }}/posts">Pages</a>{% endif %}
-  {% if page.next.url %}<a href="{{ page.next.url | absolute_url }}" class="next">{{ page.next.title }}</a> &raquo;{% else %}<a href="{{ site.baseurl }}/posts" class="next">Pages</a> &raquo;{% endif %}
-  </p>
+<p>&laquo; 
+  {% if page.previous.url %}<a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>{% else %}<a href="{{ site.baseurl }}/posts">Pages</a>{% endif %}
+  {% if page.next.url %}<a href="{{ page.next.url | absolute_url }}" class="next">{{ page.next.title }}</a>{% else %}<a href="{{ site.baseurl }}/posts" class="next">Pages</a>{% endif %}
+ &raquo;</p>
