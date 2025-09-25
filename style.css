@@ -415,6 +415,9 @@ a.anchor:hover {
 }
 .next {
   float: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .notice {
   background: var(--body);
