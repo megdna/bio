@@ -5,8 +5,7 @@ title: Style Demo
 description: This is a demonstration of the elements in CSS.
 sitemap: false
 ---
-<h3 id="top">Navigation <a class="anchor" href="#top">#</a></h3>
-<nav>
+<nav id="top">
   → <a href="#article">Article</a>
   → <a href="#aside">Aside</a>
   → <a href="#blockquote">Blockquote</a>
@@ -19,6 +18,7 @@ sitemap: false
 </nav>
 <hr>
 
+<h1>Heading 1</h1>
 <h2>Heading 2</h2>
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
