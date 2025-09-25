@@ -6,6 +6,5 @@ layout: default
 {% if page.show %}<figure><img alt="{{ page.alt }}" src="{{ page.image | absolute_url }}"><figcaption>{{ page.caption }}</figcaption></figure>{% endif %}
 {{ content }}
 {% if page.date %}<p><cite>Updated on {{ page.date | date: "%B %d, %Y" }}</cite> {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags#{{ tag }}" class="next"><button># {{ tag }}</button></a>{% endfor %}</p><hr>{% endif %}
-{% if page.previous.url %}&laquo; <a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>{% endif %}
-{% if !page.previous.url %}&laquo; <a href="{{ site.baseurl }}/tags#{{ tag }}">{{ page.title }}</a>{% endif %}
+{% if page.previous.url %}&laquo; <a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>{% else %}&laquo; <a href="{{ site.baseurl }}/posts">Posts</a>{% endelse %}{% endif %}
 {% if page.next.url %}<div class="next"><a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a> &raquo;</div>{% endif %}
