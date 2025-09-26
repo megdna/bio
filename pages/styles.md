@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /style
+permalink: /styles
 title: Styles
 description: This is a demonstration of the elements in CSS.
 categories: [Pages]
