@@ -2,6 +2,7 @@
 layout: page
 permalink: /archive
 title: Archive
+sitemap: false
 ---
 <h3>Pages</h3>
 <ul>
@@ -12,6 +13,7 @@ title: Archive
     {% endif %}{% endfor %}
     </ul>
   </li>
+  <li><a href="{{site.baseurl}}/404">404</a></li>
   <li><a href="{{site.baseurl}}/feed" target="_blank">Feed</a></li>
   <li><a href="{{site.baseurl}}/sitemap" target="_blank">Sitemap</a></li>
 </ul>
@@ -28,9 +30,8 @@ title: Archive
 <!--Cycles through tag list and creates subheader for each tag name-->
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
 {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-<h4 id="{{ this_word | cgi_escape }}">{{ this_word }}</h4>
 <!--Lists all posts corresponding to specific tag-->
-<ul>
+<ul id="{{ this_word | cgi_escape }}">{{ this_word }}
 {% for post in site.tags[this_word] %}{% if post.title != null %}
 <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time>{{ post.date | date_to_string }}</time></li>
 {% endif %}{% endfor %}
