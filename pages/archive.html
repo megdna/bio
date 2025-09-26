@@ -24,12 +24,20 @@ sitemap: false
 <ul style="list-style-type:none; padding-left:0.5rem">
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
 {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-  <li>{% octicon tag class:"icon" height:16 %} <a href="#{{ this_word | cgi_escape }}">{{ this_word }}</a> ({{ site.tags[this_word].size }})
+<li>{% octicon tag class:"icon" height:16 %} <a href="#{{ this_word | cgi_escape }}">{{ this_word }}</a> ({{ site.tags[this_word].size }})</li>
+{% endunless %}{% endfor %}
+</ul>
+<!--Cycles through tag list and creates subheader for each tag name-->
+{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+<!--Lists all posts corresponding to specific tag-->
+<ul>
+  <li id="{{ this_word | cgi_escape }}">{{ this_word }}
     <ul>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
     <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time>{{ post.date | date_to_string }}</time></li>
     {% endif %}{% endfor %}
     </ul>
-</li>
-{% endunless %}{% endfor %}
+  </li>
 </ul>
+{% endunless %}{% endfor %}
