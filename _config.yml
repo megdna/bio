@@ -7,9 +7,11 @@ url: "https://megdna.github.io"
 baseurl: "/bio"
 permalink: :title
 
+code: https://github.com/bioshack
 donate: https://ko-fi.com/bioshack
-email: info@d8a.org
-goatcounter: d8a
+email: bio@d8a.org
+founded: 2011
+goatcounter: bio
 umami: 03076e42-dd66-43a9-9a24-095a5bf3344f
 
 nav:

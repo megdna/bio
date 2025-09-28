@@ -94,7 +94,9 @@ header nav a {
   padding: 0.375rem 0.5rem;
   text-transform: uppercase;
 }
-header nav a:hover {
+header nav a:hover,
+header nav a.current,
+header nav a[aria-current="page"] {
 	background: var(--body);
   border: 1px solid var(--link);
 }
