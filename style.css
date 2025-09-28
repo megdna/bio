@@ -115,7 +115,7 @@ footer {
   font-size: 0.875rem;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0.5rem 0.5rem 0.75rem 1.25rem;
+  padding: 0.5rem 0.75rem 0.75rem 1.5rem;
 }
 footer a {
   text-decoration: none;
@@ -348,9 +348,6 @@ section li {
   border-bottom: 1px solid var(--head);
   overflow: hidden;
   padding: 0.25rem 0.5rem;
-}
-section li:first-child {
-  padding-top: 0;
 }
 section li:last-child {
   border-bottom: none;
