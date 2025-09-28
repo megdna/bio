@@ -179,6 +179,7 @@ button {
   border-radius: 6px;
   color: var(--meta);
   font-size: 0.75rem;
+  margin-bottom: 0.25rem;
   padding: 4px 6px;
   transition: all 0.25s ease;
 }
@@ -346,21 +347,25 @@ section ul {
 section li {
   border-bottom: 1px solid var(--head);
   overflow: hidden;
-  padding: 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 section li:last-child {
   border-bottom: none;
+  padding-bottom: 0;
 }
 section li a {
-  float: left;
+  font-size: 0.875rem;
   font-weight: bold;
+  text-decoration: none;
+}
+section li div {
+  float: left;
   max-width: calc(100% - 6.25rem);
   overflow: hidden;
-  text-decoration: none;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-section li time {
+section li span {
   float: right;
 }
 /* Classes */
@@ -414,9 +419,6 @@ a.anchor:hover {
   text-decoration-style: wavy;  
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-}
-.next {
-  float: right;
 }
 .notice {
   background: var(--body);
