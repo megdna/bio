@@ -339,7 +339,7 @@ th, tr:nth-child(even) {
   background: var(--body);
 }
 section {
-  margin: 0 auto;
+  margin: 0.5rem auto;
 }
 section ul {
   padding: 0;
@@ -348,6 +348,9 @@ section li {
   border-bottom: 1px solid var(--head);
   overflow: hidden;
   padding: 0.25rem 0.5rem;
+}
+section li:first-child {
+  padding-top: 0;
 }
 section li:last-child {
   border-bottom: none;
