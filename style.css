@@ -339,7 +339,7 @@ th, tr:nth-child(even) {
   background: var(--body);
 }
 section {
-  margin: 0.5rem auto;
+  margin: 0 auto;
 }
 section ul {
   padding: 0;
