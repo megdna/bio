@@ -95,7 +95,7 @@ header nav a {
   text-transform: uppercase;
 }
 header nav a:hover,
-header nav a[aria-current="page"] {
+header nav a.current, {
 	background: var(--body);
   border: 1px solid var(--link);
 }
