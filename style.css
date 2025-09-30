@@ -95,7 +95,8 @@ header nav a {
   text-transform: uppercase;
 }
 header nav a:hover,
-header nav a.current, {
+header nav a.current,
+header nav a[aria-current="page"] {
 	background: var(--body);
   border: 1px solid var(--link);
 }
@@ -337,10 +338,8 @@ td, th {
 th, tr:nth-child(even) {
   background: var(--body);
 }
-section {
-  margin: 0.5rem auto;
-}
 section ul {
+  margin: 0.25rem auto;
   padding: 0;
 }
 section li {
@@ -350,7 +349,6 @@ section li {
 }
 section li:last-child {
   border-bottom: none;
-  padding-bottom: 0;
 }
 section li a {
   font-size: 0.875rem;
