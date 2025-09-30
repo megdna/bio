@@ -95,7 +95,6 @@ header nav a {
   text-transform: uppercase;
 }
 header nav a:hover,
-header nav a.current,
 header nav a[aria-current="page"] {
 	background: var(--body);
   border: 1px solid var(--link);
@@ -373,11 +372,9 @@ section li span {
 	margin-left: 0.125rem;
 	text-decoration: none;
 }
-a.anchor,
-a.anchor:visited {
+a.anchor {
 	color: transparent;
 }
-a.anchor:focus,
 a.anchor:hover {
 	color: var(--next);
 }
