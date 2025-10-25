@@ -12,7 +12,7 @@ sitemap: false
 {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
 <li>{% octicon tag class:"icon" height:16 %} <a href="#{{ this_word | cgi_escape }}">{{ this_word }}</a> ({{ site.tags[this_word].size }})</li>
 {% endunless %}{% endfor %}
-<li>{% octicon tag class:"icon" height:16 %} <a href="#Pages">Pages</a></li>
+<li>{% octicon file class:"icon" height:16 %} <a href="#Pages">Pages</a></li>
 </ul>
 <!--Cycles through tag list and creates subheader for each tag name-->
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
