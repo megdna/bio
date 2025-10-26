@@ -74,7 +74,7 @@ header img {
   background: var(--main);
   border: 2px solid var(--main);
   border-radius: 1000px;
-  margin-top: -4.5rem;
+  margin: -5rem 0 0;
   height: 80px;
   width: 80px;
 }
