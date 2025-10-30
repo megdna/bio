@@ -192,6 +192,7 @@ button:hover {
   background: var(--body);
   border: 1px solid var(--link);
   color: var(--link);
+  cursor: pointer;
 }
 cite, time {
   color: var(--meta);
