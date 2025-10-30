@@ -7,12 +7,13 @@ sitemap: false
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign tag_words = site_tags | split:',' | sort %}
 <ul id="top" style="list-style-type:none; padding-left:0.5rem">
-<!--Cycles through tag list and creates header row of all tags with counts-->
-{% for item in (0..site.tags.size) %}{% unless forloop.last %}
-{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-<li>{% octicon tag class:"icon" height:16 %} <a href="#{{ this_word | cgi_escape }}">{{ this_word }}</a> ({{ site.tags[this_word].size }})</li>
-{% endunless %}{% endfor %}
-<li>{% octicon file class:"icon" height:16 %} <a href="#Pages">Pages</a></li>
+  <!--Cycles through tag list and creates header row of all tags with counts-->
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+  {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+  <li>{% octicon tag class:"icon" height:16 %} <a href="#{{ this_word | cgi_escape }}">{{ this_word }}</a> ({{ site.tags[this_word].size }})</li>
+  {% endunless %}{% endfor %}
+  <li>{% octicon file class:"icon" height:16 %} <a href="#Pages">Pages</a></li>
+  <li>{% octicon file class:"icon" height:16 %} <a href="#Navigation">Navigation</a></li>
 </ul>
 <!--Cycles through tag list and creates subheader for each tag name-->
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
@@ -20,22 +21,23 @@ sitemap: false
 <!--Lists all posts corresponding to specific tag-->
 <h3 id="{{ this_word | cgi_escape }}">{{ this_word }} <a class="anchor" href="#{{ this_word | cgi_escape }}">#</a></h3>
 <ul>
-{% for post in site.tags[this_word] %}{% if post.title != null %}
-<li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time>{{ post.date | date_to_string }}</time></li>
-{% endif %}{% endfor %}
+  {% for post in site.tags[this_word] %}{% if post.title != null %}
+  <li><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a> <time>{{ post.date | date_to_string }}</time></li>
+  {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
 <h3 id="Pages">Pages <a class="anchor" href="#Pages">#</a></h3>
+<ul>
+  {% for page in site.pages %}{% if page.categories contains "Pages" %}
+  <li><a href="{{ page.url | relative_url }}">{{page.title}}</a></li>
+  {% endif %}{% endfor %}
+</ul>
+<h3 id="Navigation">Navigation <a class="anchor" href="#Navigation">#</a></h3>
 <ul>
   <li><a href="{{site.baseurl}}">Home</a></li>
   {% for item in site.nav %}
   <li><a href="{{ item.link | prepend: site.baseurl | prepend: site.url }}">{{ item.name }}</a></li>
   {% endfor %}
-</ul>
-<ul>
-  {% for page in site.pages %}{% if page.categories contains "Pages" %}
-  <li><a href="{{ page.url | relative_url }}">{{page.title}}</a></li>
-  {% endif %}{% endfor %}
 </ul>
 <ul>
   <li><a href="{{site.baseurl}}/404">404</a></li>

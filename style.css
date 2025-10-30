@@ -267,6 +267,9 @@ aside {
   padding: 0 0.5rem;
   width: 40%;
 }
+aside img {
+  margin-bottom: 0.25rem;
+}
 blockquote {
   border: 1px solid var(--head);
   border-inline-start: 4px solid var(--next);
