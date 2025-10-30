@@ -268,7 +268,7 @@ aside {
   width: 40%;
 }
 aside img {
-  padding-bottom: 0.25rem;
+  padding-bottom: 0;
 }
 blockquote {
   border: 1px solid var(--head);
