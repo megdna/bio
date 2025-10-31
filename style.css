@@ -264,7 +264,10 @@ aside {
   border-radius: 6px;
   float: right;
   padding: 0 0.5rem;
-  width: 40%;
+  width: 50%;
+}
+aside:active {
+  width:100%
 }
 aside img {
   margin-bottom: 0.125rem;
