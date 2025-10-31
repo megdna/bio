@@ -1,9 +1,7 @@
 /* Defaults */
-@import url(https://fonts.bunny.net/css?family=space-grotesk);
-@import url(https://fonts.bunny.net/css?family=space-mono);
 :root {
-  --mono: "Space Mono", monospace;
-  --sans: "Space Grotesk", sans-serif;
+  --mono: "Courier New", monospace;
+  --sans: Arial, sans-serif;
   --serif: Georgia, serif;
 
   --main: #ffffff;
@@ -202,6 +200,7 @@ code, samp, var {
   color: var(--code);
   font-family: var(--mono);
   font-size: 0.875rem;
+  font-weight: bold;
 }
 dd {
   margin-left: 1.5rem;
@@ -296,6 +295,7 @@ kbd {
   color: var(--meta);
   font-family: var(--mono);
   font-size: 0.875rem;
+  font-weight: bold;
   padding: 2px 4px;
 }
 pre {
@@ -305,6 +305,7 @@ pre {
   color: var(--meta);
   font-family: var(--mono);
   font-size: 0.875rem;
+  font-weight: bold;
   margin: 1rem auto;
   overflow: auto;
   padding: 0.5rem 0.75rem;
@@ -375,15 +376,13 @@ section li span {
   float: right;
 }
 /* Classes */
-.anchor {
-	margin-left: 0.125rem;
-	text-decoration: none;
+.anchor a {
+	color: var(--text);
+  text-decoration: none;
 }
-a.anchor {
-	color: transparent;
-}
-a.anchor:hover {
-	color: var(--next);
+.anchor a:hover::after {
+  color: var(--next);
+  content: " #";
 }
 .gallery {
   display: grid;
