@@ -2,7 +2,6 @@
 :root {
   --mono: "Courier New", monospace;
   --sans: Arial, sans-serif;
-  --serif: Georgia, serif;
 
   --main: #ffffff;
   --body: #eceff4;
@@ -263,8 +262,9 @@ aside {
   border: 1px solid var(--line);
   border-radius: 6px;
   float: right;
+  margin: 0.25rem 0 0.25rem 0.25rem;
   padding: 0 0.5rem;
-  width: 50%;
+  width: 40%;
 }
 aside:active {
   width:100%
