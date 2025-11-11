@@ -2,7 +2,7 @@
 layout: null
 sitemap: false
 ---
-Sitemap: {{ "sitemap.xml" | absolute_url }}
+Sitemap: {{ site.url }}/sitemap.xml
 
 User-agent: *
 Disallow: /

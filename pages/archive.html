@@ -22,21 +22,21 @@ sitemap: false
 <h3 class="anchor"><a href="#{{ this_word | cgi_escape }}" id="{{ this_word | cgi_escape }}">{{ this_word }}</a></h3>
 <ul>
   {% for post in site.tags[this_word] %}{% if post.title != null %}
-  <li><a href="{{ post.url | absolute_url }}">{{ post.title }}</a> <time>{{ post.date | date_to_string }}</time></li>
+  <li><a href="{{site.url}}{{ post.url }}">{{ post.title }}</a> <time>{{ post.date | date_to_string }}</time></li>
   {% endif %}{% endfor %}
 </ul>
 {% endunless %}{% endfor %}
 <h3 class="anchor"><a href="#Pages" id="Pages">Pages</a></h3>
 <ul>
   {% for page in site.pages %}{% if page.categories contains "Pages" %}
-  <li><a href="{{ page.url | absolute_url }}">{{page.title}}</a></li>
+  <li><a href="{{site.url}}{{ page.url }}">{{page.title}}</a></li>
   {% endif %}{% endfor %}
 </ul>
 <h3 class="anchor"><a href="#Navigation" id="Navigation">Navigation</a></h3>
 <ul>
   <li><a href="{{site.url}}">Home</a></li>
   {% for item in site.nav %}
-  <li><a href="{{ item.link | absolute_url }}">{{ item.name }}</a></li>
+  <li><a href="{{site.url}}{{ item.link }}">{{ item.name }}</a></li>
   {% endfor %}
 </ul>
 <ul>

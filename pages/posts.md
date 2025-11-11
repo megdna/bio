@@ -7,8 +7,8 @@ title: Posts
 
 {% for post in site.posts %}
 <article>
-  {% if post.image %}<img alt="{{ post.alt }}" src="{{ post.image | absolute_url }}">{% endif %}
-  <p><b><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></b></p>
+  {% if post.image %}<img alt="{{ post.alt }}" src="{{ site.url }}{{ post.image }}">{% endif %}
+  <p><b><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></b></p>
   <p>{{ post.description }}</p>
   <p><cite>{{post.date | date: '%b %d, %Y'}} - {% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</cite></p>
 </article>
