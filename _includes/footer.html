@@ -1,7 +1,7 @@
-<div><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" data-goatcounter-click="cc">CC</a> &copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}">{{ site.title }}</a>{% if site.code %} <a href="{{ site.code }}" target="_blank" data-goatcounter-click="code">{% octicon code aria-label:code class:"icon" height:16 %}</a></div>{% endif %}
+<div><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" data-goatcounter-click="cc">CC</a> &copy; {{ site.time | date: '%Y' }} <a href="{{ site.url }}">{{ site.title }}</a>{% if site.code %} <a href="{{ site.code }}" target="_blank" data-goatcounter-click="code">{% octicon code aria-label:code class:"icon" height:16 %}</a></div>{% endif %}
 <nav>
 {% if site.donate %}<a href="{{ site.donate }}" target="_blank" data-goatcounter-click="donate">{% octicon heart aria-label:donate class:"icon" height:16 %}</a>{% endif %}
 {% if site.social %}<a href="{{ site.social }}" target="_blank" data-goatcounter-click="social">{% octicon smiley aria-label:social class:"icon" height:16 %}</a>{% endif %}
 {% if site.email %}<a href="mailto:{{ site.email }}" target="_blank" data-goatcounter-click="email">{% octicon mail aria-label:email class:"icon" height:16 %}</a>{% endif %}
-<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="rss">{% octicon rss aria-label:rss class:"icon" height:16 %}</a>
+<a href="{{ site.url }}/feed" target="_blank" data-goatcounter-click="rss">{% octicon rss aria-label:rss class:"icon" height:16 %}</a>
 </nav>

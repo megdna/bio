@@ -10,12 +10,12 @@ layout: default
     <li>
       <cite>Updated on {{ page.date | date: "%B %d, %Y" }}</cite>
       {% for tag in page.tags %}
-      <span><a href="{{ site.baseurl }}/archive#{{ tag }}"><button># {{ tag }}</button></a></span>
+      <span><a href="{{ site.url }}/archive#{{ tag }}"><button># {{ tag }}</button></a></span>
       {% endfor %}
     </li>
     <li>
       &laquo; {% if page.previous.url %}<a href="{{ page.previous.url | absolute_url }}">{{ page.previous.title }}</a>{% else %}<a href="{{ site.baseurl }}/posts">Posts</a>{% endif %}
-      <span>{% if page.next.url %}<a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a>{% else %}<a href="{{ site.baseurl }}/posts">Posts</a>{% endif %} &raquo;</span>
+      <span>{% if page.next.url %}<a href="{{ page.next.url | absolute_url }}">{{ page.next.title }}</a>{% else %}<a href="{{ site.url }}/posts">Posts</a>{% endif %} &raquo;</span>
     </li>
   </ul>
 </section>

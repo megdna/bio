@@ -5,7 +5,7 @@ title: Contact
 ---
 <h3>Donate</h3>
 
-If you like what we are doing, please consider supporting our <a href="{{ site.baseurl }}/posts">projects</a>.
+If you like what we are doing, please consider supporting our <a href="{{ site.url }}/posts">projects</a>.
 
 <a href="https://ko-fi.com/bioshack" target="_blank" data-goatcounter-click="kofi"><button>☕ Support us on Ko-fi</button></a>
 
@@ -19,7 +19,7 @@ Write to us if you want to get involved or just say hello (no spam though!).
 
 All of our posts are written by a human (not AI). You can follow our updates via <abbr title="Really Simple Syndication">RSS</abbr>.
 
-<a href="{{ site.baseurl }}/feed" target="_blank" data-goatcounter-click="follow"><button>📰 Subscribe to blog</button></a>
+<a href="{{ site.url }}/feed" target="_blank" data-goatcounter-click="follow"><button>📰 Subscribe to blog</button></a>
 
 <h3>Social</h3>
 
