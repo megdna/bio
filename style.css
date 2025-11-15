@@ -246,7 +246,7 @@ sub, sup {
 article {
   border: 1px solid var(--head);
   border-radius: 6px;
-  margin: 0.5rem auto;
+  margin: 1rem 0 0.5rem;
   padding: 0 0.5rem 0 0.75rem;
   transition: all 0.25s ease;
 }
@@ -260,9 +260,6 @@ article img {
   float: right;
   height: 3.5rem;
   width: 3.5rem;
-}
-article + article {
-  margin-top: 1rem;
 }
 aside {
   background: var(--body);
