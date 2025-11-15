@@ -192,7 +192,8 @@ button {
   border: 1px solid var(--meta);
   border-radius: 6px;
   color: var(--meta);
-  font-size: 0.75rem; 
+  font-size: 0.75rem;
+  margin-bottom: 0.125rem;
   padding: 4px 6px;
   transition: all 0.25s ease;
 }
@@ -358,7 +359,7 @@ th, tr:nth-child(even) {
   background: var(--body);
 }
 section ul {
-  margin: 0.25rem auto;
+  margin: 0;
   padding: 0;
 }
 section li {
@@ -431,9 +432,6 @@ section li span {
   text-decoration-style: wavy;  
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-}
-.next {
-  float: right;
 }
 .notice {
   background: var(--body);
