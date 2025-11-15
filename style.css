@@ -47,7 +47,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   margin: 0 auto;
-  max-width: 45rem;
+  max-width: 50rem;
   padding: 1rem;
 }
 header {
@@ -55,7 +55,7 @@ header {
   border-bottom: 1px solid var(--line);
   border-radius: 10px 10px 0 0;
   margin: 2rem 0 0;
-  padding: 1.5rem 0.5rem 0.75rem;
+  padding: 1.5rem 0.75rem 1rem;
   text-align: center;
 }
 header a {
@@ -66,7 +66,7 @@ header a:hover {
   color: var(--link);
 }
 header h1 {
-  padding: 0 0.5rem 0.25rem;
+  padding: 0 0.25rem;
 }
 header img {
   background: var(--main);
@@ -81,11 +81,10 @@ header img:hover {
   transition: all 0.25s ease;
 }
 header p {
-  padding: 0 0.5rem;
+  padding: 0.25rem;
 }
 header nav {
-  line-height: 2.5;
-  padding: 0 0.25rem;
+  line-height: 2;
 }
 header nav a {
   border: 1px solid var(--line);
@@ -109,7 +108,7 @@ main {
 }
 main nav {
   line-height: 2.25;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
 }
 main nav a {
   border: 1px solid var(--line);
@@ -148,7 +147,7 @@ footer nav a:hover {
 /* Typography */
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
 }
 h1 {
   font-size: 2rem;
@@ -175,7 +174,6 @@ h6, p {
   line-height: 1.5;
 }
 p + p {
-  margin: 0 auto;
   padding-top: 0;
 }
 a {
@@ -194,8 +192,7 @@ button {
   border: 1px solid var(--meta);
   border-radius: 6px;
   color: var(--meta);
-  font-size: 0.75rem;
-  margin-bottom: 0.25rem;
+  font-size: 0.75rem; 
   padding: 4px 6px;
   transition: all 0.25s ease;
 }
@@ -216,12 +213,12 @@ code, samp, var {
   font-weight: bold;
 }
 dd {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 dl, ol, ul {
   line-height: 1.7;
   margin: 0.5rem auto;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 hr {
 	border: 1px dashed var(--line);
@@ -249,8 +246,8 @@ sub, sup {
 article {
   border: 1px solid var(--head);
   border-radius: 6px;
-  margin: 1rem auto;
-  padding: 0 0.5rem 0 0.25rem;
+  margin: 0.5rem auto;
+  padding: 0 0.5rem 0 0.75rem;
   transition: all 0.25s ease;
 }
 article:hover {
@@ -263,6 +260,9 @@ article img {
   float: right;
   height: 3.5rem;
   width: 3.5rem;
+}
+article + article {
+  margin-top: 1rem;
 }
 aside {
   background: var(--body);
@@ -284,16 +284,16 @@ blockquote {
   border-inline-start: 4px solid var(--next);
   border-radius: 0 6px 6px 0;
   margin: 0.5rem auto;
-  padding: 0.25rem;
+  padding: 0 0.5rem;
 }
 details {
   border: 1px solid var(--head);
   border-radius: 6px;
   margin: 0.5rem auto;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 }
 details p {
-  padding: 0.25rem 0.875rem 0;
+  padding: 0.25rem 0 0 0.875rem;
 }
 summary {
   font-weight: bold;
@@ -316,7 +316,7 @@ pre {
   font-family: var(--mono);
   font-size: 0.875rem;
   font-weight: bold;
-  margin: 1rem auto;
+  margin: 0.5rem 0 0;
   overflow: auto;
   padding: 0.5rem 0.75rem;
 }
@@ -335,11 +335,13 @@ figure {
   margin: 0 auto;
   overflow-x: auto;
 }
+figure img {
+  margin-bottom: 0;
+}
 figcaption {
   color: var(--meta);
   font-size: 0.875rem;
 	font-style: italic;
-  margin-bottom: 0.25rem;
   text-align: center;
 }
 table {
@@ -353,7 +355,7 @@ table caption {
 }
 td, th {
   border: 1px solid var(--line);
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
 }
 th, tr:nth-child(even) {
   background: var(--body);
@@ -365,7 +367,7 @@ section ul {
 section li {
   border-bottom: 1px solid var(--head);
   overflow: hidden;
-  padding: 0.25rem;
+  padding: 0.25rem 0;
 }
 section li:last-child {
   border-bottom: none;
@@ -399,7 +401,7 @@ section li span {
   grid-auto-rows: 10rem;
   grid-gap: 0.75rem;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0.5rem 0;
+  padding-bottom: 1rem;
 }
 .gallery img {
   height: 100%;
@@ -433,6 +435,9 @@ section li span {
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
+.next {
+  float: right;
+}
 .notice {
   background: var(--body);
   border: 1px solid var(--line);
@@ -440,34 +445,18 @@ section li span {
   margin: 0.5rem auto;
   padding: 0.5rem 0.75rem;
 }
-.tab {
-  margin: 1rem auto;
-}
-.tab a {
-  border: 1px solid var(--line);
-  border-bottom: 3px solid var(--line);
-  border-radius: 8px 8px 0 0;
-  margin: 0.125rem;
-  padding: 4px 6px;
-	text-decoration: none;
-  transition: all 0.25s ease;
-}
-.tab a:hover,
-.tab-current {
-  background: var(--body);
-}
 .testimonial {
   display: grid;
   grid-gap: 0.75rem;
   grid-template-columns: repeat(2, 1fr);
-  margin: 1rem auto;
+  margin: 0.5rem auto;
 }
 .testimonial blockquote {
   background: var(--body);
   border: 1px solid var(--line);
   border-radius: 6px;
   margin: 0;
-  padding: 0 1rem 0.5rem 0.5rem;
+  padding: 0 1rem 0.25rem 0.75rem;
 }
 .testimonial blockquote::before {
   color: var(--next);
@@ -485,7 +474,7 @@ section li span {
   border-radius: 6px;
   list-style: none; 
   margin: 1rem 0;
-  padding: 0.5rem;
+  padding: 0 0.75rem 0.25rem;
 }
 .timeline h4 {
   position: relative;
@@ -497,6 +486,6 @@ section li span {
   height: 15px;
   width: 15px; 
   top: 15px;
-  left: -38px;
+  left: -42px;
   position: absolute;
 }
