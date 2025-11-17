@@ -218,7 +218,7 @@ dd {
 }
 dl, ol, ul {
   line-height: 1.6;
-  margin: 0.5rem auto;
+  margin: 0.25rem 0 0.5rem;
   padding-left: 1rem;
 }
 hr {
@@ -359,7 +359,7 @@ th, tr:nth-child(even) {
   background: var(--body);
 }
 section ul {
-  margin: 0.25rem auto;
+  margin: 0 auto;
   padding: 0;
 }
 section li {
