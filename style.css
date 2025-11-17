@@ -218,7 +218,7 @@ dd {
 }
 dl, ol, ul {
   line-height: 1.6;
-  margin: 0.25rem auto;
+  margin: 0.5rem auto;
   padding-left: 1rem;
 }
 hr {
@@ -359,7 +359,7 @@ th, tr:nth-child(even) {
   background: var(--body);
 }
 section ul {
-  margin: 0 auto;
+  margin: 0.25rem auto;
   padding: 0;
 }
 section li {
@@ -393,7 +393,7 @@ section li span {
 .anchor a:hover::after {
   color: var(--next);
   content: " #";
-} 
+}
 .gallery {
   display: grid;
   grid-auto-rows: 10rem;
@@ -429,7 +429,7 @@ section li span {
 }
 .message a {
   color: #ffffff;
-  text-decoration-style: wavy;  
+  text-decoration-style: wavy;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
@@ -467,7 +467,7 @@ section li span {
 .timeline li {
   border: 1px solid var(--line);
   border-radius: 6px;
-  list-style: none; 
+  list-style: none;
   margin: 1rem 0;
   padding: 0 0.75rem 0.25rem;
 }
@@ -479,7 +479,7 @@ section li span {
   border-radius: 1000px;
   content: "";
   height: 15px;
-  width: 15px; 
+  width: 15px;
   top: 15px;
   left: -42px;
   position: absolute;
