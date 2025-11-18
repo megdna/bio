@@ -277,6 +277,14 @@ aside:active {
 aside img {
   margin-bottom: 0.125rem;
 }
+aside p {
+  margin: 0 0.25rem;
+}
+@media (max-width: 500px) {
+	aside {
+		width: 50%;
+	}
+}
 blockquote {
   border: 1px solid var(--head);
   border-inline-start: 4px solid var(--next);
