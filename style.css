@@ -106,22 +106,6 @@ main {
   margin: 0 auto;
   padding: 0.5rem 1rem;
 }
-main nav {
-  line-height: 2.25;
-  margin: 0.5rem auto;
-}
-main nav a {
-  border: 1px solid var(--line);
-  border-bottom: 3px solid var(--line);
-  border-radius: 8px 8px 0 0;
-  margin: 0.125rem;
-  padding: 4px 6px;
-	text-decoration: none;
-  transition: all 0.25s ease;
-}
-main nav a:hover {
-	background: var(--body);
-}
 footer {
   align-items: center;
   background: var(--main);
@@ -178,6 +162,7 @@ p + p {
 }
 a {
   color: var(--link);
+  text-underline-offset: 4px;
   transition: all 0.25s ease;
 }
 a:hover {
@@ -186,6 +171,7 @@ a:hover {
 }
 abbr {
   cursor: help;
+  text-underline-offset: 4px;
 }
 button {
   background: var(--main);
@@ -232,6 +218,9 @@ mark {
   color: var(--text);
   padding: 1px 4px 2px;
 }
+mark a {
+  text-decoration: none;
+}
 q::after {
   color: var(--next);
   content: "\275E";
@@ -242,6 +231,9 @@ q::before {
 }
 sub, sup {
   line-height: 1;
+}
+u {
+  text-underline-offset: 4px;
 }
 /* Elements */
 article {
@@ -439,7 +431,7 @@ section li span {
   color: #ffffff;
   text-decoration-style: wavy;
   text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
+  text-underline-offset: 4px;
 }
 .notice {
   background: var(--body);
@@ -447,6 +439,22 @@ section li span {
   border-radius: 6px;
   margin: 0.5rem auto;
   padding: 0.5rem 0.75rem;
+}
+.tab {
+  line-height: 2.25;
+  margin: 0.5rem auto;
+}
+.tab a {
+  border: 1px solid var(--line);
+  border-bottom: 3px solid var(--line);
+  border-radius: 8px 8px 0 0;
+  margin: 0.125rem;
+  padding: 4px 6px;
+	text-decoration: none;
+  transition: all 0.25s ease;
+}
+.tab a:hover {
+	background: var(--body);
 }
 .testimonial {
   display: grid;
