@@ -208,8 +208,21 @@ dl, ol, ul {
   padding-left: 1rem;
 }
 hr {
-	border: 1px dashed var(--line);
-  margin: 0.5rem auto;
+	border: none;
+  margin: 0 auto;
+}
+hr::before {
+  background:
+    linear-gradient(to right, transparent, var(--meta)),
+    linear-gradient(to left, transparent, var(--meta));
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+  background-size: 49% 1px, 49% 1px;
+  color: var(--meta);
+  content: "✧";
+  display: block;
+  font-size: 1.25rem;
+  text-align: center;
 }
 mark {
   background: var(--head);
