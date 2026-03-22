@@ -1,7 +1,11 @@
 /* Defaults */
+@import url(https://fonts.bunny.net/css?family=lato);
 :root {
-  --mono: "Courier New", monospace;
-  --sans: Arial, sans-serif;
+  --mono: ui-monospace, monospace;
+  --sans: 'Lato', sans-serif;
+  --serif: Georgia, serif;
+  --small: 0.875rem;
+  --radius: 6px;
 
   --main: #ffffff;
   --body: #eceff4;
@@ -29,7 +33,6 @@
   box-sizing: border-box;
 }
 html {
-	overflow-y: scroll;
   scroll-behavior: smooth;
   text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -72,9 +75,9 @@ header img {
   background: var(--main);
   border: 2px solid var(--main);
   border-radius: 1000px;
-  margin: -4rem 0 0;
   height: 80px;
   width: 80px;
+  margin: -4rem 0 0;
 }
 header img:hover {
   border: 2px solid var(--text);
@@ -88,7 +91,7 @@ header nav {
 }
 header nav a {
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   font-size: 0.75rem;
   font-weight: bold;
   margin: 0 0.25rem; 
@@ -113,7 +116,7 @@ footer {
   border-top: 1px solid var(--line);
   color: var(--meta);
   display: flex;
-  font-size: 0.875rem;
+  font-size: var(--small);
   justify-content: space-between;
   margin: 0 auto;
   padding: 0.75rem 0.75rem 0.875rem 1rem;
@@ -165,9 +168,14 @@ a {
   text-underline-offset: 4px;
   transition: all 0.25s ease;
 }
-a:hover {
+a:hover,
+a:active {
   color: var(--next);
   text-decoration: none;
+}
+:focus-visible {
+  outline: 1px dotted var(--meta);
+  outline-offset: 2px;
 }
 abbr {
   cursor: help;
@@ -176,9 +184,9 @@ abbr {
 button {
   background: var(--main);
   border: 1px solid var(--meta);
-  border-radius: 6px;
+  border-radius: var(--radius);
   color: var(--meta);
-  font-size: 0.75rem;
+  font-size: var(--small);
   margin-bottom: 0.125rem;
   padding: 4px 6px;
   transition: all 0.25s ease;
@@ -191,13 +199,12 @@ button:hover {
 }
 cite, time {
   color: var(--meta);
-  font-size: 0.875rem;
+  font-size: var(--small);
 }
 code, samp, var {
   color: var(--code);
   font-family: var(--mono);
-  font-size: 0.875rem;
-  font-weight: bold;
+  font-size: var(--small);
 }
 dd {
   margin-left: 1rem;
@@ -208,26 +215,13 @@ dl, ol, ul {
   padding-left: 1rem;
 }
 hr {
-	border: none;
-  margin: 0 auto;
-}
-hr::before {
-  background:
-    linear-gradient(to right, transparent, var(--meta)),
-    linear-gradient(to left, transparent, var(--meta));
-  background-position: left center, right center;
-  background-repeat: no-repeat;
-  background-size: 49% 1px, 49% 1px;
-  color: var(--meta);
-  content: "✧";
-  display: block;
-  font-size: 1.25rem;
-  text-align: center;
+	border: 1px dotted var(--line);
+  margin: 0.5rem auto;
 }
 mark {
   background: var(--head);
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   color: var(--text);
   padding: 1px 4px 2px;
 }
@@ -242,6 +236,9 @@ q::before {
   color: var(--next);
   content: "\275D";
 }
+small {
+  font-size: var(--small);
+}
 sub, sup {
   line-height: 1;
 }
@@ -251,7 +248,7 @@ u {
 /* Elements */
 article {
   border: 1px solid var(--head);
-  border-radius: 6px;
+  border-radius: var(--radius);
   margin: 1rem 0 0.5rem;
   padding: 0 0.5rem 0 0.75rem;
   transition: all 0.25s ease;
@@ -270,7 +267,7 @@ article img {
 aside {
   background: var(--body);
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   float: right;
   margin: 0.25rem 0 0.25rem 0.25rem;
   padding: 0 0.5rem;
@@ -293,13 +290,13 @@ aside p {
 blockquote {
   border: 1px solid var(--head);
   border-inline-start: 4px solid var(--next);
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
   margin: 0.5rem auto;
   padding: 0 0.5rem;
 }
 details {
   border: 1px solid var(--head);
-  border-radius: 6px;
+  border-radius: var(--radius);
   margin: 0.5rem auto;
   padding: 0.5rem;
 }
@@ -312,33 +309,31 @@ summary {
 kbd {
   border: 1px solid var(--line);
   border-bottom: 3px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   color: var(--meta);
   font-family: var(--mono);
-  font-size: 0.875rem;
-  font-weight: bold;
+  font-size: var(--small);
   padding: 2px 4px;
 }
 pre {
   background: var(--body);
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   color: var(--meta);
   font-family: var(--mono);
-  font-size: 0.875rem;
-  font-weight: bold;
+  font-size: var(--small);
   margin: 0.5rem auto;
   overflow: auto;
   padding: 0.5rem 0.75rem;
 }
 audio, img, picture, video {
-  border-radius: 6px;
+  border-radius: var(--radius);
   margin: 0.5rem auto;
   max-width: 100%;
 }
 embed, iframe, object {
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   margin: 0.5rem auto;
   width: 100%;
 }
@@ -351,7 +346,7 @@ figure img {
 }
 figcaption {
   color: var(--meta);
-  font-size: 0.875rem;
+  font-size: var(--small);
 	font-style: italic;
   text-align: center;
 }
@@ -384,7 +379,7 @@ section li:last-child {
   border-bottom: none;
 }
 section li a {
-  font-size: 0.875rem;
+  font-size: var(--small);
   font-weight: bold;
   text-decoration: none;
 }
@@ -406,6 +401,23 @@ section li span {
 .anchor a:hover::after {
   color: var(--next);
   content: " #";
+}
+.divider {
+	border: none;
+  margin: 0 auto;
+}
+.divider::before {
+  background:
+    linear-gradient(to right, transparent, var(--meta)),
+    linear-gradient(to left, transparent, var(--meta));
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+  background-size: 49% 1px, 49% 1px;
+  color: var(--meta);
+  content: "✧";
+  display: block;
+  font-size: 1.25rem;
+  text-align: center;
 }
 .gallery {
   display: grid;
@@ -431,10 +443,10 @@ section li span {
 .message {
   background: radial-gradient(circle, var(--link) 0%, var(--head) 100%);
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   color: #ffffff;
   font-weight: bold;
-  font-size: 0.875rem;
+  font-size: var(--small);
   margin: 0.5rem auto;
   padding: 1rem;
   text-align: center;
@@ -449,7 +461,7 @@ section li span {
 .notice {
   background: var(--body);
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   margin: 0.5rem auto;
   padding: 0.5rem 0.75rem;
 }
@@ -478,7 +490,7 @@ section li span {
 .testimonial blockquote {
   background: var(--body);
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   margin: 0;
   padding: 0 1rem 0.25rem 0.75rem;
 }
@@ -495,7 +507,7 @@ section li span {
 }
 .timeline li {
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: var(--radius);
   list-style: none;
   margin: 1rem 0;
   padding: 0 0.75rem 0.25rem;
