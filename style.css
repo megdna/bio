@@ -183,7 +183,7 @@ abbr {
 }
 button {
   background: var(--main);
-  border: 1px solid var(--meta);
+  border: 1px solid var(--next);
   border-radius: var(--radius);
   color: var(--meta);
   font-size: var(--small);
