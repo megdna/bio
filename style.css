@@ -1,8 +1,8 @@
 /* Defaults */
-@import url(https://fonts.bunny.net/css?family=lato);
+@import url(https://fonts.bunny.net/css?family=albert-sans);
 :root {
-  --mono: ui-monospace, monospace;
-  --sans: 'Lato', sans-serif;
+  --mono: "Courier New", monospace;
+  --sans: "Albert Sans", sans-serif;
   --serif: Georgia, serif;
   --small: 0.875rem;
   --radius: 6px;
@@ -33,16 +33,12 @@
   box-sizing: border-box;
 }
 html {
+  overflow-wrap: break-word;
   scroll-behavior: smooth;
-  text-size-adjust: none;
-  -moz-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }
 /* Theme */
 body {
-  background: var(--body);
+  background-color: var(--body);
   background-image: linear-gradient(to right, var(--head) 1px, transparent 1px), linear-gradient(to bottom, var(--head) 1px, transparent 1px);
   background-size: 1rem 1rem;
   color: var(--text);
@@ -54,10 +50,10 @@ body {
   padding: 1rem;
 }
 header {
-  background: var(--main);
+  background-color: var(--main);
   border-bottom: 1px solid var(--line);
   border-radius: 10px 10px 0 0;
-  margin: 2rem 0 0;
+  margin-top: 2rem;
   padding: 1.5rem 0.75rem 1rem;
   text-align: center;
 }
@@ -69,22 +65,23 @@ header a:hover {
   color: var(--link);
 }
 header h1 {
-  padding: 0 0.25rem;
+  margin: 0 0.25rem;
 }
 header img {
-  background: var(--main);
-  border: 2px solid var(--main);
+  background-color: var(--main);
+  border: 1px solid var(--main);
   border-radius: 1000px;
+  display: inline;
   height: 80px;
   width: 80px;
   margin: -4rem 0 0;
 }
 header img:hover {
-  border: 2px solid var(--text);
+  border: 1px solid var(--text);
   transition: all 0.25s ease;
 }
 header p {
-  padding: 0.25rem;
+  margin: 0.25rem;
 }
 header nav {
   line-height: 2;
@@ -94,47 +91,46 @@ header nav a {
   border-radius: var(--radius);
   font-size: 0.75rem;
   font-weight: bold;
-  margin: 0 0.25rem; 
+  margin: 0.125rem;
   padding: 0.375rem 0.5rem;
   text-transform: uppercase;
 }
 header nav a:hover,
 header nav a.current,
 header nav a[aria-current="page"] {
-	background: var(--body);
+	background-color: var(--body);
   border: 1px solid var(--link);
 }
 main {
-  background: var(--main);
-  margin: 0 auto;
-  padding: 0.5rem 1rem;
+  background-color: var(--main);
+  padding: 0.125rem 1rem;
 }
 footer {
   align-items: center;
-  background: var(--main);
+  background-color: var(--main);
   border-radius: 0 0 10px 10px;
   border-top: 1px solid var(--line);
   color: var(--meta);
   display: flex;
+  flex-wrap: wrap;
   font-size: var(--small);
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 0.75rem 0.75rem 0.875rem 1rem;
+  padding: 0.5rem 0.5rem 0.625rem 1rem;
 }
 footer a {
   text-decoration: none;
 }
 footer nav a {
   color: var(--meta);
-  padding: 0 0.25rem;
+  line-height: 2;
+  margin-right: 0.5rem;
 }
 footer nav a:hover {
   color: var(--link);
 }
 /* Typography */
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0 auto;
-  padding: 0.5rem 0;
+h1, h2, h3, h4, h5 {
+  margin: 1rem 0;
 }
 h1 {
   font-size: 2rem;
@@ -159,9 +155,7 @@ h5 {
 h6, p {
   font-size: 1rem;
   line-height: 1.5;
-}
-p + p {
-  padding-top: 0;
+  margin: 0.5rem 0;
 }
 a {
   color: var(--link);
@@ -182,18 +176,18 @@ abbr {
   text-underline-offset: 4px;
 }
 button {
-  background: var(--main);
+  background-color: var(--main);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   color: var(--meta);
   font: var(--sans);
-  font-size: var(--small) !important;
+  font-size: var(--small);
   margin-bottom: 0.125rem;
   padding: 2px 6px;
   transition: all 0.25s ease;
 }
 button:hover {
-  background: var(--body);
+  background-color: var(--body);
   border: 1px solid var(--link);
   color: var(--link);
   cursor: pointer;
@@ -205,22 +199,23 @@ cite, time {
 code, samp, var {
   color: var(--code);
   font-family: var(--mono);
-  font-size: var(--small);
 }
 dd {
   margin-left: 1rem;
 }
 dl, ol, ul {
-  line-height: 1.6;
-  margin: 0.25rem 0 0.5rem;
+  margin: 0.5rem 0;
   padding-left: 1rem;
+}
+li {
+  margin: 0.25rem 0;
 }
 hr {
 	border: 1px dotted var(--line);
-  margin: 0.5rem auto;
+  margin: 1rem 0;
 }
 mark {
-  background: var(--head);
+  background-color: var(--head);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   color: var(--text);
@@ -250,7 +245,7 @@ u {
 article {
   border: 1px solid var(--head);
   border-radius: var(--radius);
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0;
   padding: 0 0.5rem 0 0.75rem;
   transition: all 0.25s ease;
 }
@@ -258,7 +253,7 @@ article:hover {
   box-shadow: 2px 2px 10px var(--line);
 }
 article img {
-  background: var(--body);
+  background-color: var(--body);
   border: 1px solid var(--line);
   border-radius: 1000px;
   float: right;
@@ -266,7 +261,7 @@ article img {
   width: 3.5rem;
 }
 aside {
-  background: var(--body);
+  background-color: var(--body);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   float: right;
@@ -277,12 +272,6 @@ aside {
 aside:active {
   width:100%
 }
-aside img {
-  margin-bottom: 0.125rem;
-}
-aside p {
-  margin: 0 0.25rem;
-}
 @media (max-width: 500px) {
 	aside {
 		width: 50%;
@@ -292,19 +281,20 @@ blockquote {
   border: 1px solid var(--head);
   border-inline-start: 4px solid var(--next);
   border-radius: 0 var(--radius) var(--radius) 0;
-  margin: 0.5rem auto;
+  margin: 1rem 0;
   padding: 0 0.5rem;
 }
 details {
   border: 1px solid var(--head);
   border-radius: var(--radius);
-  margin: 0.5rem auto;
+  margin: 1rem 0;
   padding: 0.5rem;
 }
 details p {
-  padding: 0.25rem 0 0 0.875rem;
+  padding-left: 0.875rem;
 }
 summary {
+  cursor: pointer;
   font-weight: bold;
 }
 kbd {
@@ -317,33 +307,39 @@ kbd {
   padding: 2px 4px;
 }
 pre {
-  background: var(--body);
+  background-color: var(--body);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  color: var(--meta);
   font-family: var(--mono);
   font-size: var(--small);
-  margin: 0.5rem auto;
+  margin: 1rem 0;
   overflow: auto;
   padding: 0.5rem 0.75rem;
 }
-audio, img, picture, video {
+audio {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+}
+img, picture, video {
   border-radius: var(--radius);
+  display: block;
   margin: 0.5rem auto;
   max-width: 100%;
 }
 embed, iframe, object {
-  border: 1px solid var(--line);
+  border: 1px solid var(--head);
   border-radius: var(--radius);
-  margin: 0.5rem auto;
+  display: block;
+  margin: 1rem 0;
   width: 100%;
 }
 figure {
-  margin: 0 auto;
+  margin: 0;
   overflow-x: auto;
 }
 figure img {
-  margin-bottom: 0;
+  margin-bottom: 0.25rem;
 }
 figcaption {
   color: var(--meta);
@@ -353,7 +349,6 @@ figcaption {
 }
 table {
   border-collapse: collapse;
-  margin: 0.5rem auto;
   width: 100%;
 }
 table caption {
@@ -365,16 +360,16 @@ td, th {
   padding: 0.5rem 0.75rem;
 }
 th, tr:nth-child(even) {
-  background: var(--body);
+  background-color: var(--body);
 }
 section ul {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 section li {
   border-bottom: 1px solid var(--head);
   overflow: hidden;
-  padding: 0.25rem 0;
+  padding-bottom: 0.375rem;
 }
 section li:last-child {
   border-bottom: none;
@@ -403,126 +398,15 @@ section li span {
   color: var(--link);
   content: " #";
 }
-.divider {
-	border: none;
-  margin: 0 auto;
-}
-.divider::before {
-  background:
-    linear-gradient(to right, transparent, var(--meta)),
-    linear-gradient(to left, transparent, var(--meta));
-  background-position: left center, right center;
-  background-repeat: no-repeat;
-  background-size: 49% 1px, 49% 1px;
-  color: var(--meta);
-  content: "✧";
-  display: block;
-  font-size: 1.25rem;
-  text-align: center;
-}
-.gallery {
-  display: grid;
-  grid-auto-rows: 10rem;
-  grid-gap: 0.75rem;
-  grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 1rem;
-}
-.gallery img {
-  height: 100%;
-  width: 100%;  
-  object-fit: cover;
-  transition: transform 0.25s ease-out;
-}
-.gallery img:hover {
-  transform: scale(1.05);
-}
 .icon {
   fill: currentColor;
   height: 0.875rem;
   vertical-align: -0.15rem;
 }
-.message {
-  background: radial-gradient(circle, var(--link) 0%, var(--head) 100%);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  color: #ffffff;
-  font-weight: bold;
-  font-size: var(--small);
-  margin: 0.5rem auto;
-  padding: 1rem;
-  text-align: center;
-  text-shadow: 1px 2px 4px #000000;
-}
-.message a {
-  color: #ffffff;
-  text-decoration-style: wavy;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-}
 .notice {
-  background: var(--body);
+  background-color: var(--body);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  margin: 0.5rem auto;
+  margin: 1rem auto;
   padding: 0.5rem 0.75rem;
-}
-.tab {
-  line-height: 2.25;
-  margin: 0.5rem auto;
-}
-.tab a {
-  border: 1px solid var(--line);
-  border-bottom: 3px solid var(--line);
-  border-radius: 8px 8px 0 0;
-  margin: 0.125rem;
-  padding: 4px 6px;
-	text-decoration: none;
-  transition: all 0.25s ease;
-}
-.tab a:hover {
-	background: var(--body);
-}
-.testimonial {
-  display: grid;
-  grid-gap: 0.75rem;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0.5rem auto;
-}
-.testimonial blockquote {
-  background: var(--body);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  margin: 0;
-  padding: 0 1rem 0.25rem 0.75rem;
-}
-.testimonial blockquote::before {
-  color: var(--next);
-  content: "\275E";
-  float: right;
-  font-size: 2.5rem;
-}
-.timeline ul {
-  border-left: 6px solid var(--next);
-  margin: 0.5rem 0 0.5rem 0.25rem;
-  padding-left: 1.125rem;
-}
-.timeline li {
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  list-style: none;
-  margin: 1rem 0;
-  padding: 0 0.75rem 0.25rem;
-}
-.timeline h4 {
-  position: relative;
-}
-.timeline h4::before {
-  border: 5px solid var(--text);
-  border-radius: 1000px;
-  content: "";
-  height: 15px;
-  width: 15px;
-  top: 15px;
-  left: -42px;
-  position: absolute;
 }
