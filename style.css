@@ -103,7 +103,7 @@ header nav a[aria-current="page"] {
 }
 main {
   background-color: var(--main);
-  padding: 0.25rem 1rem;
+  padding: 0.125rem 1rem;
 }
 footer {
   align-items: center;
@@ -204,7 +204,7 @@ dd {
   margin-left: 1rem;
 }
 dl, ol, ul {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   padding-left: 1rem;
 }
 li {
@@ -369,7 +369,7 @@ section ul {
 section li {
   border-bottom: 1px solid var(--head);
   overflow: hidden;
-  padding: 0.25rem 0;
+  padding-bottom: 0.25rem;
 }
 section li:last-child {
   border-bottom: none;
@@ -407,6 +407,6 @@ section li span {
   background-color: var(--body);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   padding: 0.5rem 0.75rem;
 }
