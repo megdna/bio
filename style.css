@@ -181,7 +181,7 @@ button {
   border-radius: var(--radius);
   color: var(--meta);
   font: var(--sans);
-  font-size: var(--small) !important;
+  font-size: var(--small);
   margin-bottom: 0.125rem;
   padding: 2px 6px;
   transition: all 0.25s ease;
@@ -369,7 +369,7 @@ section ul {
 section li {
   border-bottom: 1px solid var(--head);
   overflow: hidden;
-  padding-bottom: 0.25rem;
+  padding: 0.25rem 0;
 }
 section li:last-child {
   border-bottom: none;
