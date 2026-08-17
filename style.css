@@ -369,7 +369,7 @@ section ul {
 section li {
   border-bottom: 1px solid var(--head);
   overflow: hidden;
-  padding-bottom: 0.25rem;
+  padding: 0.125rem 0 0.25rem;
 }
 section li:last-child {
   border-bottom: none;
