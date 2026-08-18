@@ -408,6 +408,6 @@ section li span {
   background-color: var(--body);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
   padding: 0.5rem 0.75rem;
 }
