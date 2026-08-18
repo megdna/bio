@@ -182,8 +182,9 @@ button {
   color: var(--meta);
   font: var(--sans);
   font-size: var(--small);
+  font-weight: normal;
   margin-bottom: 0.125rem;
-  padding: 2px 6px;
+  padding: 2px 6px 3px;
   transition: all 0.25s ease;
 }
 button:hover {
