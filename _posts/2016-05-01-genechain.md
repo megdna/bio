@@ -2,7 +2,7 @@
 layout: post
 title: GeneChain
 description: Genomics blockchain for verifying DNA sequences and giving personal gene IDs
-image: /media/genechain.png
+image: /media/genechain.jpg
 tags: [Projects]
 ---
 <h4><em>Building Blocks of Life</em></h4>
